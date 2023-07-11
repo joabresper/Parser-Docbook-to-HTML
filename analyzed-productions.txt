@@ -1,0 +1,2740 @@
+ANALYZED PRODUCTIONS BY THE PARSER:
+========================================
+1] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Segmented Telemetry Data Filter',4,49)]
+----------------------------------------
+2] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+3] Prod. TITLEH1 --> | [TITLEH1, LexToken(title,'<title>',4,42), CONT_TITLE, LexToken(cTitle,'</title>',4,80)]
+----------------------------------------
+4] Prod. ELEM_INFO --> | [ELEM_INFO, TITLEH1]
+----------------------------------------
+5] Prod. CONT_3 --> | [CONT_3, LexToken(text,'Eduard',6,122)]
+----------------------------------------
+6] Prod. CONT_VAR --> | [CONT_VAR, CONT_3]
+----------------------------------------
+7] Prod. FIRSTNAME --> | [FIRSTNAME, LexToken(firstname,'<firstname>',6,111), CONT_VAR, LexToken(cFirstname,'</firstname>',6,128)]
+----------------------------------------
+8] Prod. CONT_3 --> | [CONT_3, LexToken(text,'Tibet',7,155)]
+----------------------------------------
+9] Prod. CONT_VAR --> | [CONT_VAR, CONT_3]
+----------------------------------------
+10] Prod. SURNAME --> | [SURNAME, LexToken(surname,'<surname>',7,146), CONT_VAR, LexToken(cSurname,'</surname>',7,160)]
+----------------------------------------
+11] Prod. CONT_AUTHOR --> | [CONT_AUTHOR, FIRSTNAME, SURNAME]
+----------------------------------------
+12] Prod. AUTHOR --> | [AUTHOR, LexToken(author,'<author>',5,94), CONT_AUTHOR, LexToken(cAuthor,'</author>',8,176)]
+----------------------------------------
+13] Prod. ELEM_INFO --> | [ELEM_INFO, AUTHOR]
+----------------------------------------
+14] Prod. CONT_3 --> | [CONT_3, LexToken(text,'28.03.2022',10,195)]
+----------------------------------------
+15] Prod. CONT_VAR --> | [CONT_VAR, CONT_3]
+----------------------------------------
+16] Prod. DATE --> | [DATE, LexToken(date,'<date>',10,189), CONT_VAR, LexToken(cDate,'</date>',10,205)]
+----------------------------------------
+17] Prod. ELEM_INFO --> | [ELEM_INFO, DATE]
+----------------------------------------
+18] Prod. CONT_INFO --> | [CONT_INFO, ELEM_INFO]
+----------------------------------------
+19] Prod. CONT_INFO --> | [CONT_INFO, ELEM_INFO, CONT_INFO]
+----------------------------------------
+20] Prod. CONT_INFO --> | [CONT_INFO, ELEM_INFO, CONT_INFO]
+----------------------------------------
+21] Prod. INFO --> | [INFO, LexToken(info,'<info>',3,30), CONT_INFO, LexToken(cInfo,'</info>',11,214)]
+----------------------------------------
+22] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Introduction',14,243)]
+----------------------------------------
+23] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+24] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',14,236), CONT_TITLE, LexToken(cTitle,'</title>',14,255)]
+----------------------------------------
+25] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Scope of this document',17,287)]
+----------------------------------------
+26] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+27] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',17,280), CONT_TITLE, LexToken(cTitle,'</title>',17,309)]
+----------------------------------------
+28] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,"This is a complete administrator's manual of the",19,328)]
+----------------------------------------
+29] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Segmented Telemetry Data Filter (STDF) software. It describes in a brief',20,380)]
+----------------------------------------
+30] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'what STDF is proposed for, its overall design, what each component is',21,456)]
+----------------------------------------
+31] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'indented for. Also this manual includes a full information about an',22,529)]
+----------------------------------------
+32] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'installation process and usage of STDF. The theory and principles of',23,600)]
+----------------------------------------
+33] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'data filtering, explanation of the Erlang language syntax (used for data',24,672)]
+----------------------------------------
+34] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'filtering) are completely out of scope of this manual.',25,748)]
+----------------------------------------
+35] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+36] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+37] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+38] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+39] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+40] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+41] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+42] Prod. PARA --> | [PARA, LexToken(para,'<para>',19,322), CONT_PARA, LexToken(cPara,'</para>',25,802)]
+----------------------------------------
+43] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+44] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+45] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',16,267), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',26,812)]
+----------------------------------------
+46] Prod. CONT_A_S --> | [CONT_A_S, SECTION]
+----------------------------------------
+47] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Document structure',29,846)]
+----------------------------------------
+48] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+49] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',29,839), CONT_TITLE, LexToken(cTitle,'</title>',29,864)]
+----------------------------------------
+50] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'This document includes a following parts:',31,883)]
+----------------------------------------
+51] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+52] Prod. PARA --> | [PARA, LexToken(para,'<para>',31,877), CONT_PARA, LexToken(cPara,'</para>',31,924)]
+----------------------------------------
+53] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+54] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'- current',35,975)]
+----------------------------------------
+55] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'section.',36,989)]
+----------------------------------------
+56] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+57] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+58] Prod. PARA --> | [PARA, LexToken(para,'<para>',35,969), CONT_PARA, LexToken(cPara,'</para>',36,997)]
+----------------------------------------
+59] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+60] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+61] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',34,954), CONT_ITEM, LexToken(cListItem,'</listitem>',37,1008)]
+----------------------------------------
+62] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'- a',40,1045)]
+----------------------------------------
+63] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,"description of the software's overall design, features and",41,1053)]
+----------------------------------------
+64] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'functionality.',42,1116)]
+----------------------------------------
+65] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+66] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+67] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+68] Prod. PARA --> | [PARA, LexToken(para,'<para>',40,1039), CONT_PARA, LexToken(cPara,'</para>',42,1130)]
+----------------------------------------
+69] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+70] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+71] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',39,1024), CONT_ITEM, LexToken(cListItem,'</listitem>',43,1141)]
+----------------------------------------
+72] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'-',46,1178)]
+----------------------------------------
+73] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'the information about system requirements and installation of the',47,1184)]
+----------------------------------------
+74] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'software.',48,1254)]
+----------------------------------------
+75] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+76] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+77] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+78] Prod. PARA --> | [PARA, LexToken(para,'<para>',46,1172), CONT_PARA, LexToken(cPara,'</para>',48,1263)]
+----------------------------------------
+79] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+80] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+81] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',45,1157), CONT_ITEM, LexToken(cListItem,'</listitem>',49,1274)]
+----------------------------------------
+82] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'-',52,1311)]
+----------------------------------------
+83] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'current section describes, how to create and mastering filtering',53,1317)]
+----------------------------------------
+84] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'rules required to be deployed into the one of the software',54,1386)]
+----------------------------------------
+85] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'component.',55,1449)]
+----------------------------------------
+86] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+87] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+88] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+89] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+90] Prod. PARA --> | [PARA, LexToken(para,'<para>',52,1305), CONT_PARA, LexToken(cPara,'</para>',55,1459)]
+----------------------------------------
+91] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+92] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+93] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',51,1290), CONT_ITEM, LexToken(cListItem,'</listitem>',56,1470)]
+----------------------------------------
+94] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'-',59,1507)]
+----------------------------------------
+95] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'section about customizing and fine tuning final data.',60,1513)]
+----------------------------------------
+96] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+97] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+98] Prod. PARA --> | [PARA, LexToken(para,'<para>',59,1501), CONT_PARA, LexToken(cPara,'</para>',60,1566)]
+----------------------------------------
+99] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+100] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+101] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',58,1486), CONT_ITEM, LexToken(cListItem,'</listitem>',61,1577)]
+----------------------------------------
+102] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'- list of',64,1614)]
+----------------------------------------
+103] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'possible issues and ways to resolve them.',65,1628)]
+----------------------------------------
+104] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+105] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+106] Prod. PARA --> | [PARA, LexToken(para,'<para>',64,1608), CONT_PARA, LexToken(cPara,'</para>',65,1669)]
+----------------------------------------
+107] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+108] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+109] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',63,1593), CONT_ITEM, LexToken(cListItem,'</listitem>',66,1680)]
+----------------------------------------
+110] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',33,936), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',67,1695)]
+----------------------------------------
+111] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+112] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+113] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+114] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',28,826), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',68,1713)]
+----------------------------------------
+115] Prod. SECTIONS --> | [SECTIONS, SECTION]
+----------------------------------------
+116] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',13,224), TITLEH2, CONT_A_S, SECTIONS, LexToken(cSection,'</section>',69,1725)]
+----------------------------------------
+117] Prod. CONT_A_S --> | [CONT_A_S, SECTION]
+----------------------------------------
+118] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Description of the STDF',72,1757)]
+----------------------------------------
+119] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+120] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',72,1750), CONT_TITLE, LexToken(cTitle,'</title>',72,1780)]
+----------------------------------------
+121] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Brief description of the STDF',75,1812)]
+----------------------------------------
+122] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+123] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',75,1805), CONT_TITLE, LexToken(cTitle,'</title>',75,1841)]
+----------------------------------------
+124] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'STDF is a data handling software designed to help in capturing',77,1860)]
+----------------------------------------
+125] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'high speed telemetry data. The purpose of the STDF is to automatically',78,1926)]
+----------------------------------------
+126] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'and linearly scale processing capacity for such data. The STDF segments',79,2000)]
+----------------------------------------
+127] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'data into smaller chunks and sends them through a load balancer to',80,2075)]
+----------------------------------------
+128] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'several servers that filter received data. That way it is possible',81,2145)]
+----------------------------------------
+129] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'to:',82,2215)]
+----------------------------------------
+130] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+131] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+132] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+133] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+134] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+135] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+136] Prod. PARA --> | [PARA, LexToken(para,'<para>',77,1854), CONT_PARA, LexToken(cPara,'</para>',82,2218)]
+----------------------------------------
+137] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+138] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'avoid using a single high-powered processing unit working with',86,2269)]
+----------------------------------------
+139] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'data;',87,2336)]
+----------------------------------------
+140] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+141] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+142] Prod. PARA --> | [PARA, LexToken(para,'<para>',86,2263), CONT_PARA, LexToken(cPara,'</para>',87,2341)]
+----------------------------------------
+143] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+144] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+145] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',85,2248), CONT_ITEM, LexToken(cListItem,'</listitem>',88,2352)]
+----------------------------------------
+146] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'reduce power of any unit, used for processing;',91,2389)]
+----------------------------------------
+147] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+148] Prod. PARA --> | [PARA, LexToken(para,'<para>',91,2383), CONT_PARA, LexToken(cPara,'</para>',91,2435)]
+----------------------------------------
+149] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+150] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+151] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',90,2368), CONT_ITEM, LexToken(cListItem,'</listitem>',92,2446)]
+----------------------------------------
+152] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'deploy the system with a great flexibility and scalability,',95,2483)]
+----------------------------------------
+153] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'based on various initial requirements and/or conditions.',96,2547)]
+----------------------------------------
+154] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+155] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+156] Prod. PARA --> | [PARA, LexToken(para,'<para>',95,2477), CONT_PARA, LexToken(cPara,'</para>',96,2603)]
+----------------------------------------
+157] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+158] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+159] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',94,2462), CONT_ITEM, LexToken(cListItem,'</listitem>',97,2614)]
+----------------------------------------
+160] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',84,2230), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',98,2629)]
+----------------------------------------
+161] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+162] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+163] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+164] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',74,1792), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',99,2647)]
+----------------------------------------
+165] Prod. CONT_A_S --> | [CONT_A_S, SECTION]
+----------------------------------------
+166] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Overall design of STDF',102,2681)]
+----------------------------------------
+167] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+168] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',102,2674), CONT_TITLE, LexToken(cTitle,'</title>',102,2703)]
+----------------------------------------
+169] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'The system contains of several parts:',104,2722)]
+----------------------------------------
+170] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+171] Prod. PARA --> | [PARA, LexToken(para,'<para>',104,2716), CONT_PARA, LexToken(cPara,'</para>',104,2759)]
+----------------------------------------
+172] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+173] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'coordinator component (node) - is used for smart management of',108,2810)]
+----------------------------------------
+174] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'the whole system;',109,2877)]
+----------------------------------------
+175] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+176] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+177] Prod. PARA --> | [PARA, LexToken(para,'<para>',108,2804), CONT_PARA, LexToken(cPara,'</para>',109,2894)]
+----------------------------------------
+178] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+179] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+180] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',107,2789), CONT_ITEM, LexToken(cListItem,'</listitem>',110,2905)]
+----------------------------------------
+181] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'loadbalancer component (node) - is used for receiving raw data',113,2942)]
+----------------------------------------
+182] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'from external sources (i.e. sensors) and transfer it further based',114,3009)]
+----------------------------------------
+183] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,"on coordinator's directives;",115,3080)]
+----------------------------------------
+184] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+185] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+186] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+187] Prod. PARA --> | [PARA, LexToken(para,'<para>',113,2936), CONT_PARA, LexToken(cPara,'</para>',115,3108)]
+----------------------------------------
+188] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+189] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+190] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',112,2921), CONT_ITEM, LexToken(cListItem,'</listitem>',116,3119)]
+----------------------------------------
+191] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'filter component(s)/node(s) - are used to process data',119,3156)]
+----------------------------------------
+192] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'received from the loadbalancer. Processing is based on the current',120,3215)]
+----------------------------------------
+193] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'workload. If it exceeds the maximum, defined by a coordinator, data',121,3286)]
+----------------------------------------
+194] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'chunks automatically migrate to other filter nodes, which free',122,3358)]
+----------------------------------------
+195] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'resources are enough to manipulate the data. The number of filter',123,3425)]
+----------------------------------------
+196] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'components within installation varies and based on current',124,3495)]
+----------------------------------------
+197] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'performance needs.',125,3558)]
+----------------------------------------
+198] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+199] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+200] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+201] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+202] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+203] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+204] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+205] Prod. PARA --> | [PARA, LexToken(para,'<para>',119,3150), CONT_PARA, LexToken(cPara,'</para>',125,3576)]
+----------------------------------------
+206] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+207] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+208] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',118,3135), CONT_ITEM, LexToken(cListItem,'</listitem>',126,3587)]
+----------------------------------------
+209] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',106,2771), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',127,3602)]
+----------------------------------------
+210] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+211] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'In the heart of the STDF is a proprietary protocol that was',129,3628)]
+----------------------------------------
+212] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'developed by Teliota company. This protocol can be used between',130,3691)]
+----------------------------------------
+213] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'components to coordinate data manipulation, calculation on individual',131,3758)]
+----------------------------------------
+214] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'filters, running on each server, and data migration between',132,3831)]
+----------------------------------------
+215] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'filters.',133,3894)]
+----------------------------------------
+216] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+217] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+218] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+219] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+220] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+221] Prod. PARA --> | [PARA, LexToken(para,'<para>',129,3622), CONT_PARA, LexToken(cPara,'</para>',133,3902)]
+----------------------------------------
+222] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+223] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'The typical workflow includes the following steps:',135,3920)]
+----------------------------------------
+224] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+225] Prod. PARA --> | [PARA, LexToken(para,'<para>',135,3914), CONT_PARA, LexToken(cPara,'</para>',135,3970)]
+----------------------------------------
+226] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+227] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+228] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+229] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+230] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+231] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',101,2661), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',136,3980)]
+----------------------------------------
+232] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'loadbalancer component receives all-raw data from external',144,4088)]
+----------------------------------------
+233] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'sources (i.e. sensors) and transmit it further to filters based on',145,4154)]
+----------------------------------------
+234] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,"coordinator's current workload rules and internal logic;",146,4228)]
+----------------------------------------
+235] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+236] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+237] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+238] Prod. PARA --> | [PARA, LexToken(para,'<para>',144,4082), CONT_PARA, LexToken(cPara,'</para>',146,4284)]
+----------------------------------------
+239] Prod. CONT_ENTRY --> | [CONT_ENTRY, PARA]
+----------------------------------------
+240] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',143,4067), CONT_ENTRY, LexToken(cEntry,'</entry>',147,4298)]
+----------------------------------------
+241] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'filter component receives an independent dataset from the',150,4335)]
+----------------------------------------
+242] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,"loadbalancer and asks a cluster's coordinator to supply a filtering",151,4400)]
+----------------------------------------
+243] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'rules;',152,4475)]
+----------------------------------------
+244] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+245] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+246] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+247] Prod. PARA --> | [PARA, LexToken(para,'<para>',150,4329), CONT_PARA, LexToken(cPara,'</para>',152,4481)]
+----------------------------------------
+248] Prod. CONT_ENTRY --> | [CONT_ENTRY, PARA]
+----------------------------------------
+249] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',149,4314), CONT_ENTRY, LexToken(cEntry,'</entry>',153,4495)]
+----------------------------------------
+250] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'coordinator provides a rules to the filter and then rules are',156,4532)]
+----------------------------------------
+251] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'applied on-the-fly onto the incoming data, received from the',157,4601)]
+----------------------------------------
+252] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'loadbalancer;',158,4669)]
+----------------------------------------
+253] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+254] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+255] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+256] Prod. PARA --> | [PARA, LexToken(para,'<para>',156,4526), CONT_PARA, LexToken(cPara,'</para>',158,4682)]
+----------------------------------------
+257] Prod. CONT_ENTRY --> | [CONT_ENTRY, PARA]
+----------------------------------------
+258] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',155,4511), CONT_ENTRY, LexToken(cEntry,'</entry>',159,4696)]
+----------------------------------------
+259] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+260] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+261] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+262] Prod. ROW --> | [ROW, LexToken(row,'<row>',142,4055), CONT_ROW, LexToken(cRow,'</row>',160,4710)]
+----------------------------------------
+263] Prod. CONT_T --> | [CONT_T, ROW]
+----------------------------------------
+264] Prod. TBODY --> | [TBODY, LexToken(tbody,'<tbody>',141,4042), CONT_T, LexToken(cTbody,'</tbody>',161,4721)]
+----------------------------------------
+265] Prod. TGROUP --> | [TGROUP, LexToken(tgroup,'<tgroup>',140,4029), TBODY, LexToken(cTgroup,'</tgroup>',162,4733)]
+----------------------------------------
+266] Prod. TABLE_GROUP --> | [TABLE_GROUP, TGROUP]
+----------------------------------------
+267] Prof. INFORMAL_TABLE --> | [INFORMAL_TABLE, LexToken(informalTable,'<informaltable>',139,4010), TABLE_GROUP, LexToken(cInformalTable,'</informaltable>',163,4746)]
+----------------------------------------
+268] Prod. CONT_1 --> | [CONT_1, INFORMAL_TABLE]
+----------------------------------------
+269] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+270] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',138,3997), CONT_A_S, LexToken(cSection,'</section>',164,4765)]
+----------------------------------------
+271] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Overall design of STDF',167,4799)]
+----------------------------------------
+272] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+273] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',167,4792), CONT_TITLE, LexToken(cTitle,'</title>',167,4821)]
+----------------------------------------
+274] Prod. IMAGE_OBJECT --> | [IMAGE_OBJECT, LexToken(imageObject,'<imageobject>',170,4852), LexToken(imageData,'<imagedata fileref="img/stdf_manual.svg"/>',171,4871), LexToken(cImageObject,'</imageobject>',172,4918)]
+----------------------------------------
+275] Prod. CONT_MEDIA_OBJECT --> | [CONT_MEDIA_OBJECT, IMAGE_OBJECT]
+----------------------------------------
+276] Prod. MEDIA_OBJECT --> | [MEDIA_OBJECT, LexToken(mediaObject,'<mediaobject>',169,4834), CONT_MEDIA_OBJECT, LexToken(cMediaObject,'</mediaobject>',173,4936)]
+----------------------------------------
+277] Prod. CONT_1 --> | [CONT_1, MEDIA_OBJECT]
+----------------------------------------
+278] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+279] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',166,4779), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',174,4953)]
+----------------------------------------
+280] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'a sufficient number of such redundant servers (filter modes)',179,5018)]
+----------------------------------------
+281] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'exists in the pool as during an overload situation;',180,5083)]
+----------------------------------------
+282] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+283] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+284] Prod. PARA --> | [PARA, LexToken(para,'<para>',179,5012), CONT_PARA, LexToken(cPara,'</para>',180,5134)]
+----------------------------------------
+285] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+286] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+287] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',178,4997), CONT_ITEM, LexToken(cListItem,'</listitem>',181,5145)]
+----------------------------------------
+288] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'the offloaded data is similar to the original data and can be',184,5182)]
+----------------------------------------
+289] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'filtered with same rules.',185,5248)]
+----------------------------------------
+290] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+291] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+292] Prod. PARA --> | [PARA, LexToken(para,'<para>',184,5176), CONT_PARA, LexToken(cPara,'</para>',185,5273)]
+----------------------------------------
+293] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+294] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+295] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',183,5161), CONT_ITEM, LexToken(cListItem,'</listitem>',186,5284)]
+----------------------------------------
+296] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',177,4979), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',187,5298)]
+----------------------------------------
+297] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+298] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'adding new server hardware;',194,5390)]
+----------------------------------------
+299] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+300] Prod. PARA --> | [PARA, LexToken(para,'<para>',194,5384), CONT_PARA, LexToken(cPara,'</para>',194,5417)]
+----------------------------------------
+301] Prod. CONT_ENTRY --> | [CONT_ENTRY, PARA]
+----------------------------------------
+302] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',193,5370), CONT_ENTRY, LexToken(cEntry,'</entry>',195,5430)]
+----------------------------------------
+303] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'installing the filter component software onto it;',198,5465)]
+----------------------------------------
+304] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+305] Prod. PARA --> | [PARA, LexToken(para,'<para>',198,5459), CONT_PARA, LexToken(cPara,'</para>',198,5514)]
+----------------------------------------
+306] Prod. CONT_ENTRY --> | [CONT_ENTRY, PARA]
+----------------------------------------
+307] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',197,5445), CONT_ENTRY, LexToken(cEntry,'</entry>',199,5527)]
+----------------------------------------
+308] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'configuring the coordinator server address.',202,5562)]
+----------------------------------------
+309] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+310] Prod. PARA --> | [PARA, LexToken(para,'<para>',202,5556), CONT_PARA, LexToken(cPara,'</para>',202,5605)]
+----------------------------------------
+311] Prod. CONT_ENTRY --> | [CONT_ENTRY, PARA]
+----------------------------------------
+312] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',201,5542), CONT_ENTRY, LexToken(cEntry,'</entry>',203,5618)]
+----------------------------------------
+313] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+314] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+315] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+316] Prod. ROW --> | [ROW, LexToken(row,'<row>',192,5359), CONT_ROW, LexToken(cRow,'</row>',204,5631)]
+----------------------------------------
+317] Prod. CONT_T --> | [CONT_T, ROW]
+----------------------------------------
+318] Prod. TBODY --> | [TBODY, LexToken(tbody,'<tbody>',191,5347), CONT_T, LexToken(cTbody,'</tbody>',205,5641)]
+----------------------------------------
+319] Prod. TGROUP --> | [TGROUP, LexToken(tgroup,'<tgroup>',190,5335), TBODY, LexToken(cTgroup,'</tgroup>',206,5652)]
+----------------------------------------
+320] Prod. TABLE_GROUP --> | [TABLE_GROUP, TGROUP]
+----------------------------------------
+321] Prof. INFORMAL_TABLE --> | [INFORMAL_TABLE, LexToken(informalTable,'<informaltable>',189,5317), TABLE_GROUP, LexToken(cInformalTable,'</informaltable>',207,5664)]
+----------------------------------------
+322] Prod. CONT_1 --> | [CONT_1, INFORMAL_TABLE]
+----------------------------------------
+323] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+324] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+325] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',176,4967), CONT_A_S, LexToken(cSection,'</section>',208,5683)]
+----------------------------------------
+326] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'The filter node will register itself to the coordinator and the',210,5714)]
+----------------------------------------
+327] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'coordinator will instruct the loadbalancer to forward traffic to this',211,5780)]
+----------------------------------------
+328] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'new node.',212,5852)]
+----------------------------------------
+329] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+330] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+331] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+332] Prod. PARA --> | [PARA, LexToken(para,'<para>',210,5708), CONT_PARA, LexToken(cPara,'</para>',212,5861)]
+----------------------------------------
+333] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+334] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Telemetry data and filter operations are defined with a definition',214,5878)]
+----------------------------------------
+335] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'file that in turn is written in a proprietary filter rule language. The',215,5947)]
+----------------------------------------
+336] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'language defines in details:',216,6021)]
+----------------------------------------
+337] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+338] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+339] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+340] Prod. PARA --> | [PARA, LexToken(para,'<para>',214,5872), CONT_PARA, LexToken(cPara,'</para>',216,6049)]
+----------------------------------------
+341] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+342] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+343] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+344] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',209,5696), CONT_A_S, LexToken(cSection,'</section>',217,6059)]
+----------------------------------------
+345] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'what the incoming data is stands for;',221,6123)]
+----------------------------------------
+346] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+347] Prod. PARA --> | [PARA, LexToken(para,'<para>',221,6117), CONT_PARA, LexToken(cPara,'</para>',221,6160)]
+----------------------------------------
+348] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+349] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+350] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',220,6102), CONT_ITEM, LexToken(cListItem,'</listitem>',222,6171)]
+----------------------------------------
+351] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'how the data may be aggregated and filtered out in case of',225,6208)]
+----------------------------------------
+352] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'outliers or unwanted values are found.',226,6271)]
+----------------------------------------
+353] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+354] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+355] Prod. PARA --> | [PARA, LexToken(para,'<para>',225,6202), CONT_PARA, LexToken(cPara,'</para>',226,6309)]
+----------------------------------------
+356] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+357] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+358] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',224,6187), CONT_ITEM, LexToken(cListItem,'</listitem>',227,6320)]
+----------------------------------------
+359] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',219,6084), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',228,6334)]
+----------------------------------------
+360] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+361] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'The coordinator reads the filter language files and runs them on',230,6359)]
+----------------------------------------
+362] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'its own logic processing engine. This engine is connected to all the',231,6426)]
+----------------------------------------
+363] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'filtering nodes, which receives processing instructions in the form of a',232,6497)]
+----------------------------------------
+364] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'proprietary, compressed command protocol. The protocol is',233,6572)]
+----------------------------------------
+365] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'bidirectional:',234,6632)]
+----------------------------------------
+366] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+367] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+368] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+369] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+370] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+371] Prod. PARA --> | [PARA, LexToken(para,'<para>',230,6353), CONT_PARA, LexToken(cPara,'</para>',234,6646)]
+----------------------------------------
+372] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+373] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'filter nodes and the loadbalancer inform the coordinator about',238,6696)]
+----------------------------------------
+374] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'data they receive and their status.',239,6763)]
+----------------------------------------
+375] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+376] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+377] Prod. PARA --> | [PARA, LexToken(para,'<para>',238,6690), CONT_PARA, LexToken(cPara,'</para>',239,6798)]
+----------------------------------------
+378] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+379] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+380] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',237,6675), CONT_ITEM, LexToken(cListItem,'</listitem>',240,6809)]
+----------------------------------------
+381] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'coordinator instructs:',243,6846)]
+----------------------------------------
+382] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+383] Prod. PARA --> | [PARA, LexToken(para,'<para>',243,6840), CONT_PARA, LexToken(cPara,'</para>',243,6868)]
+----------------------------------------
+384] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+385] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'loadbalancer - where to deploy initial raw-based',247,6924)]
+----------------------------------------
+386] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'data;',248,6979)]
+----------------------------------------
+387] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+388] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+389] Prod. PARA --> | [PARA, LexToken(para,'<para>',247,6918), CONT_PARA, LexToken(cPara,'</para>',248,6984)]
+----------------------------------------
+390] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+391] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+392] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',246,6901), CONT_ITEM, LexToken(cListItem,'</listitem>',249,6997)]
+----------------------------------------
+393] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'filters - what data is and how that data should be',252,7038)]
+----------------------------------------
+394] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'manipulated over.',253,7095)]
+----------------------------------------
+395] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+396] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+397] Prod. PARA --> | [PARA, LexToken(para,'<para>',252,7032), CONT_PARA, LexToken(cPara,'</para>',253,7112)]
+----------------------------------------
+398] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+399] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+400] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',251,7015), CONT_ITEM, LexToken(cListItem,'</listitem>',254,7125)]
+----------------------------------------
+401] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',245,6881), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',255,7141)]
+----------------------------------------
+402] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+403] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+404] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1, CONT_ITEM]
+----------------------------------------
+405] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',242,6825), CONT_ITEM, LexToken(cListItem,'</listitem>',256,7160)]
+----------------------------------------
+406] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',236,6657), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',257,7174)]
+----------------------------------------
+407] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+408] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+409] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+410] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+411] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',218,6072), CONT_A_S, LexToken(cSection,'</section>',258,7192)]
+----------------------------------------
+412] Prod. SECTIONS --> | [SECTIONS, SECTION]
+----------------------------------------
+413] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+414] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+415] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+416] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+417] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+418] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',71,1738), TITLEH2, CONT_A_S, SECTIONS, LexToken(cSection,'</section>',259,7204)]
+----------------------------------------
+419] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Installation of the software',262,7236)]
+----------------------------------------
+420] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+421] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',262,7229), CONT_TITLE, LexToken(cTitle,'</title>',262,7264)]
+----------------------------------------
+422] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'System requirements',265,7296)]
+----------------------------------------
+423] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+424] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',265,7289), CONT_TITLE, LexToken(cTitle,'</title>',265,7315)]
+----------------------------------------
+425] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'To successfully install and run STDF, your base hardware/software',267,7334)]
+----------------------------------------
+426] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'installation have to be complied with the following requirements:',268,7403)]
+----------------------------------------
+427] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+428] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+429] Prod. PARA --> | [PARA, LexToken(para,'<para>',267,7328), CONT_PARA, LexToken(cPara,'</para>',268,7468)]
+----------------------------------------
+430] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+431] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Two (2) dedicated hardware servers for a coordinator and a',272,7520)]
+----------------------------------------
+432] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'loadbalancer components;',273,7583)]
+----------------------------------------
+433] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+434] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+435] Prod. PARA --> | [PARA, LexToken(para,'<para>',272,7514), CONT_PARA, LexToken(cPara,'</para>',273,7607)]
+----------------------------------------
+436] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+437] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+438] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',271,7499), CONT_ITEM, LexToken(cListItem,'</listitem>',274,7619)]
+----------------------------------------
+439] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'no other application software (i.e. MTA, DB, etc.), except of',277,7657)]
+----------------------------------------
+440] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'an operating system and system utilities should be installed on the',278,7723)]
+----------------------------------------
+441] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'above servers;',279,7795)]
+----------------------------------------
+442] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+443] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+444] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+445] Prod. PARA --> | [PARA, LexToken(para,'<para>',277,7651), CONT_PARA, LexToken(cPara,'</para>',279,7809)]
+----------------------------------------
+446] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+447] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+448] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',276,7636), CONT_ITEM, LexToken(cListItem,'</listitem>',280,7821)]
+----------------------------------------
+449] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'required amount of servers that will be used as hosts for a',283,7859)]
+----------------------------------------
+450] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'filtering components (nodes);',284,7923)]
+----------------------------------------
+451] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+452] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+453] Prod. PARA --> | [PARA, LexToken(para,'<para>',283,7853), CONT_PARA, LexToken(cPara,'</para>',284,7952)]
+----------------------------------------
+454] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+455] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+456] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',282,7838), CONT_ITEM, LexToken(cListItem,'</listitem>',285,7964)]
+----------------------------------------
+457] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'network connectivity with all sensors that gather information',288,8002)]
+----------------------------------------
+458] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'for your application - your firewall rules should allow sensors to',289,8068)]
+----------------------------------------
+459] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'access the STDF cluster (loadbalancer component);',290,8139)]
+----------------------------------------
+460] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+461] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+462] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+463] Prod. PARA --> | [PARA, LexToken(para,'<para>',288,7996), CONT_PARA, LexToken(cPara,'</para>',290,8188)]
+----------------------------------------
+464] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+465] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+466] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',287,7981), CONT_ITEM, LexToken(cListItem,'</listitem>',291,8200)]
+----------------------------------------
+467] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'network connectivity within all components of the STDF',294,8238)]
+----------------------------------------
+468] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'installation and data receivers beyond the STDF deployment (DB or',295,8297)]
+----------------------------------------
+469] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'third-party application servers);',296,8367)]
+----------------------------------------
+470] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+471] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+472] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+473] Prod. PARA --> | [PARA, LexToken(para,'<para>',294,8232), CONT_PARA, LexToken(cPara,'</para>',296,8400)]
+----------------------------------------
+474] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+475] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+476] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',293,8217), CONT_ITEM, LexToken(cListItem,'</listitem>',297,8412)]
+----------------------------------------
+477] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'any recent Linux distribution with a kernel 2.6.32 or',300,8450)]
+----------------------------------------
+478] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'later;',301,8508)]
+----------------------------------------
+479] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+480] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+481] Prod. PARA --> | [PARA, LexToken(para,'<para>',300,8444), CONT_PARA, LexToken(cPara,'</para>',301,8514)]
+----------------------------------------
+482] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+483] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+484] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',299,8429), CONT_ITEM, LexToken(cListItem,'</listitem>',302,8526)]
+----------------------------------------
+485] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'standard (base) Linux utilities, including:',305,8565)]
+----------------------------------------
+486] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+487] Prod. PARA --> | [PARA, LexToken(para,'<para>',305,8559), CONT_PARA, LexToken(cPara,'</para>',305,8608)]
+----------------------------------------
+488] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+489] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'- utility to work with files;',309,8667)]
+----------------------------------------
+490] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+491] Prod. PARA --> | [PARA, LexToken(para,'<para>',309,8660), CONT_PARA, LexToken(cPara,'</para>',309,8696)]
+----------------------------------------
+492] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+493] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+494] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',308,8643), CONT_ITEM, LexToken(cListItem,'</listitem>',310,8710)]
+----------------------------------------
+495] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'- utility to get packages from',313,8753)]
+----------------------------------------
+496] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'the distribution server;',314,8790)]
+----------------------------------------
+497] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+498] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+499] Prod. PARA --> | [PARA, LexToken(para,'<para>',313,8746), CONT_PARA, LexToken(cPara,'</para>',314,8814)]
+----------------------------------------
+500] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+501] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+502] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',312,8729), CONT_ITEM, LexToken(cListItem,'</listitem>',315,8828)]
+----------------------------------------
+503] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'any console text editors to edit configuration files -',318,8870)]
+----------------------------------------
+504] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'i.e.',319,8931)]
+----------------------------------------
+505] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'etc.',320,8942)]
+----------------------------------------
+506] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+507] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+508] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+509] Prod. PARA --> | [PARA, LexToken(para,'<para>',318,8864), CONT_PARA, LexToken(cPara,'</para>',320,8946)]
+----------------------------------------
+510] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+511] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+512] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',317,8847), CONT_ITEM, LexToken(cListItem,'</listitem>',321,8960)]
+----------------------------------------
+513] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',307,8622), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',322,8977)]
+----------------------------------------
+514] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+515] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+516] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1, CONT_ITEM]
+----------------------------------------
+517] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',304,8543), CONT_ITEM, LexToken(cListItem,'</listitem>',323,8997)]
+----------------------------------------
+518] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',270,7480), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',324,9012)]
+----------------------------------------
+519] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+520] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+521] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+522] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',264,7276), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',325,9030)]
+----------------------------------------
+523] Prod. CONT_A_S --> | [CONT_A_S, SECTION]
+----------------------------------------
+524] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'User qualification',328,9064)]
+----------------------------------------
+525] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+526] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',328,9057), CONT_TITLE, LexToken(cTitle,'</title>',328,9082)]
+----------------------------------------
+527] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'To install and maintain STDF system administrator have to',330,9101)]
+----------------------------------------
+528] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'have:',331,9162)]
+----------------------------------------
+529] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+530] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+531] Prod. PARA --> | [PARA, LexToken(para,'<para>',330,9095), CONT_PARA, LexToken(cPara,'</para>',331,9167)]
+----------------------------------------
+532] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+533] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'skills equals to those, that are enough to successfully pass',335,9220)]
+----------------------------------------
+534] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'the LPIC-2 exam;',336,9286)]
+----------------------------------------
+535] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+536] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+537] Prod. PARA --> | [PARA, LexToken(para,'<para>',335,9214), CONT_PARA, LexToken(cPara,'</para>',336,9302)]
+----------------------------------------
+538] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+539] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+540] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',334,9198), CONT_ITEM, LexToken(cListItem,'</listitem>',337,9314)]
+----------------------------------------
+541] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'some knowledge of Erlang language syntax to write filtering',340,9353)]
+----------------------------------------
+542] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'rules.',341,9418)]
+----------------------------------------
+543] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+544] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+545] Prod. PARA --> | [PARA, LexToken(para,'<para>',340,9347), CONT_PARA, LexToken(cPara,'</para>',341,9424)]
+----------------------------------------
+546] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+547] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+548] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',339,9331), CONT_ITEM, LexToken(cListItem,'</listitem>',342,9436)]
+----------------------------------------
+549] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'read throughly a "STDF filtering rules language reference"',345,9475)]
+----------------------------------------
+550] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'manual (supplied by Teliota separately).',346,9539)]
+----------------------------------------
+551] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+552] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+553] Prod. PARA --> | [PARA, LexToken(para,'<para>',345,9469), CONT_PARA, LexToken(cPara,'</para>',346,9579)]
+----------------------------------------
+554] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+555] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+556] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',344,9453), CONT_ITEM, LexToken(cListItem,'</listitem>',347,9591)]
+----------------------------------------
+557] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',333,9179), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',348,9606)]
+----------------------------------------
+558] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+559] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+560] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+561] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',327,9044), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',349,9624)]
+----------------------------------------
+562] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Installation process of components',352,9658)]
+----------------------------------------
+563] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+564] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',352,9651), CONT_TITLE, LexToken(cTitle,'</title>',352,9692)]
+----------------------------------------
+565] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Getting packages of components',355,9726)]
+----------------------------------------
+566] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+567] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',355,9719), CONT_TITLE, LexToken(cTitle,'</title>',355,9756)]
+----------------------------------------
+568] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'All packages are to be downloaded from a Teliota distribution',357,9776)]
+----------------------------------------
+569] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'web server: ',358,9842)]
+----------------------------------------
+570] Prod. CONT_2 --> | [CONT_2, LexToken(text,'https://download.teliota.com',358,9902)]
+----------------------------------------
+571] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+572] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://download.teliota.com">',358,9854), CONT_SECL, LexToken(cLink,'</link>',358,9930)]
+----------------------------------------
+573] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+574] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'.',358,9937)]
+----------------------------------------
+575] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+576] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+577] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+578] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+579] Prod. PARA --> | [PARA, LexToken(para,'<para>',357,9770), CONT_PARA, LexToken(cPara,'</para>',358,9938)]
+----------------------------------------
+580] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+581] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+582] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',354,9705), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',359,9949)]
+----------------------------------------
+583] Prod. CONT_A_S --> | [CONT_A_S, SECTION]
+----------------------------------------
+584] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Installation of a coordinator component',362,9985)]
+----------------------------------------
+585] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+586] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',362,9978), CONT_TITLE, LexToken(cTitle,'</title>',362,10024)]
+----------------------------------------
+587] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'To install a coordinator component:',364,10044)]
+----------------------------------------
+588] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+589] Prod. PARA --> | [PARA, LexToken(para,'<para>',364,10038), CONT_PARA, LexToken(cPara,'</para>',364,10079)]
+----------------------------------------
+590] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+591] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Go the the top level installation directory.',370,10160)]
+----------------------------------------
+592] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',370,10153), CONT_ENTRY, LexToken(cEntry,'</entry>',370,10204)]
+----------------------------------------
+593] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+594] Prod. ROW --> | [ROW, LexToken(row,'<row>',369,10140), CONT_ROW, LexToken(cRow,'</row>',371,10219)]
+----------------------------------------
+595] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,"Make a directory for coordinator's files:",374,10253)]
+----------------------------------------
+596] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',374,10246), CONT_ENTRY, LexToken(cEntry,'</entry>',374,10294)]
+----------------------------------------
+597] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+598] Prod. ROW --> | [ROW, LexToken(row,'<row>',373,10233), CONT_ROW, LexToken(cRow,'</row>',375,10309)]
+----------------------------------------
+599] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Change a directory to the recently created one:',378,10343)]
+----------------------------------------
+600] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',378,10336), CONT_ENTRY, LexToken(cEntry,'</entry>',378,10390)]
+----------------------------------------
+601] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+602] Prod. ROW --> | [ROW, LexToken(row,'<row>',377,10323), CONT_ROW, LexToken(cRow,'</row>',379,10405)]
+----------------------------------------
+603] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Download the package with a coordinator component:',382,10439)]
+----------------------------------------
+604] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',382,10432), CONT_ENTRY, LexToken(cEntry,'</entry>',382,10489)]
+----------------------------------------
+605] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+606] Prod. ROW --> | [ROW, LexToken(row,'<row>',381,10419), CONT_ROW, LexToken(cRow,'</row>',383,10504)]
+----------------------------------------
+607] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Untar coordinator component files:',386,10538)]
+----------------------------------------
+608] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',386,10531), CONT_ENTRY, LexToken(cEntry,'</entry>',386,10572)]
+----------------------------------------
+609] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+610] Prod. ROW --> | [ROW, LexToken(row,'<row>',385,10518), CONT_ROW, LexToken(cRow,'</row>',387,10587)]
+----------------------------------------
+611] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'component should listen on:',392,10722)]
+----------------------------------------
+612] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'any text editor and set up the IP and port that coordinator',391,10655), CONT_ENTRY]
+----------------------------------------
+613] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Open configuration file in',390,10621), CONT_ENTRY]
+----------------------------------------
+614] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',390,10614), CONT_ENTRY, LexToken(cEntry,'</entry>',392,10749)]
+----------------------------------------
+615] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+616] Prod. ROW --> | [ROW, LexToken(row,'<row>',389,10601), CONT_ROW, LexToken(cRow,'</row>',393,10764)]
+----------------------------------------
+617] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'folder:',397,10826)]
+----------------------------------------
+618] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Change directory the',396,10798), CONT_ENTRY]
+----------------------------------------
+619] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',396,10791), CONT_ENTRY, LexToken(cEntry,'</entry>',397,10833)]
+----------------------------------------
+620] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+621] Prod. ROW --> | [ROW, LexToken(row,'<row>',395,10778), CONT_ROW, LexToken(cRow,'</row>',398,10848)]
+----------------------------------------
+622] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'have an execution bit turned on.',402,10908)]
+----------------------------------------
+623] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Check if the file ',401,10882), CONT_ENTRY]
+----------------------------------------
+624] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',401,10875), CONT_ENTRY, LexToken(cEntry,'</entry>',402,10940)]
+----------------------------------------
+625] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+626] Prod. ROW --> | [ROW, LexToken(row,'<row>',400,10862), CONT_ROW, LexToken(cRow,'</row>',403,10955)]
+----------------------------------------
+627] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Run the coordinator:',406,10989)]
+----------------------------------------
+628] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',406,10982), CONT_ENTRY, LexToken(cEntry,'</entry>',406,11009)]
+----------------------------------------
+629] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+630] Prod. ROW --> | [ROW, LexToken(row,'<row>',405,10969), CONT_ROW, LexToken(cRow,'</row>',407,11024)]
+----------------------------------------
+631] Prod. CONT_T --> | [CONT_T, ROW]
+----------------------------------------
+632] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+633] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+634] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+635] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+636] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+637] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+638] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+639] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+640] Prod. TBODY --> | [TBODY, LexToken(tbody,'<tbody>',368,10126), CONT_T, LexToken(cTbody,'</tbody>',408,11036)]
+----------------------------------------
+641] Prod. TGROUP --> | [TGROUP, LexToken(tgroup,'<tgroup>',367,10112), TBODY, LexToken(cTgroup,'</tgroup>',409,11049)]
+----------------------------------------
+642] Prod. TABLE_GROUP --> | [TABLE_GROUP, TGROUP]
+----------------------------------------
+643] Prof. INFORMAL_TABLE --> | [INFORMAL_TABLE, LexToken(informalTable,'<informaltable>',366,10092), TABLE_GROUP, LexToken(cInformalTable,'</informaltable>',410,11063)]
+----------------------------------------
+644] Prod. CONT_1 --> | [CONT_1, INFORMAL_TABLE]
+----------------------------------------
+645] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'The coordinator is needed to be fed by filtering rules. The',412,11091)]
+----------------------------------------
+646] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'coordinator includes a separate language parsing and debugging tool',413,11155)]
+----------------------------------------
+647] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'which validates a filter rule.',414,11227)]
+----------------------------------------
+648] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+649] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+650] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+651] Prod. PARA --> | [PARA, LexToken(para,'<para>',412,11085), CONT_PARA, LexToken(cPara,'</para>',414,11257)]
+----------------------------------------
+652] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+653] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'It is assumed that you have filtering rules already written.',415,11276)]
+----------------------------------------
+654] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,"If you haven't any rule written yet, first check the section.",416,11342)]
+----------------------------------------
+655] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+656] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+657] Prod. PARA --> | [PARA, LexToken(para,'<para>',415,11270), CONT_PARA, LexToken(cPara,'</para>',416,11403)]
+----------------------------------------
+658] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+659] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'To deploy a filtering rule:',419,11427)]
+----------------------------------------
+660] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+661] Prod. PARA --> | [PARA, LexToken(para,'<para>',419,11421), CONT_PARA, LexToken(cPara,'</para>',419,11454)]
+----------------------------------------
+662] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+663] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Check the filtering rule:',426,11550)]
+----------------------------------------
+664] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+665] Prod. PARA --> | [PARA, LexToken(para,'<para>',426,11544), CONT_PARA, LexToken(cPara,'</para>',426,11575)]
+----------------------------------------
+666] Prod. CONT_ENTRY --> | [CONT_ENTRY, PARA]
+----------------------------------------
+667] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',425,11528), CONT_ENTRY, LexToken(cEntry,'</entry>',427,11590)]
+----------------------------------------
+668] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'If there are any output messages - read them carefully.',430,11629)]
+----------------------------------------
+669] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'These messages also saved within a log file for the future',431,11693)]
+----------------------------------------
+670] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'analysis.',432,11760)]
+----------------------------------------
+671] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+672] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+673] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+674] Prod. PARA --> | [PARA, LexToken(para,'<para>',430,11623), CONT_PARA, LexToken(cPara,'</para>',432,11769)]
+----------------------------------------
+675] Prod. CONT_ENTRY --> | [CONT_ENTRY, PARA]
+----------------------------------------
+676] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',429,11607), CONT_ENTRY, LexToken(cEntry,'</entry>',433,11784)]
+----------------------------------------
+677] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Copy the rule file to a ',435,11822)]
+----------------------------------------
+678] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'directory within the coordinator installation:',436,11855)]
+----------------------------------------
+679] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+680] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+681] Prod. PARA --> | [PARA, LexToken(para,'<para>',435,11816), CONT_PARA, LexToken(cPara,'</para>',436,11901)]
+----------------------------------------
+682] Prod. CONT_ENTRY --> | [CONT_ENTRY, PARA]
+----------------------------------------
+683] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',434,11800), CONT_ENTRY, LexToken(cEntry,'</entry>',437,11916)]
+----------------------------------------
+684] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Open configuration file in',440,11955)]
+----------------------------------------
+685] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'any text editor and add recently copied file into the',441,11990)]
+----------------------------------------
+686] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,"coordinator's configuration file:",442,12052)]
+----------------------------------------
+687] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+688] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+689] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+690] Prod. PARA --> | [PARA, LexToken(para,'<para>',440,11949), CONT_PARA, LexToken(cPara,'</para>',442,12085)]
+----------------------------------------
+691] Prod. CONT_ENTRY --> | [CONT_ENTRY, PARA]
+----------------------------------------
+692] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',439,11933), CONT_ENTRY, LexToken(cEntry,'</entry>',443,12100)]
+----------------------------------------
+693] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Restart the coordinator component:',446,12139)]
+----------------------------------------
+694] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+695] Prod. PARA --> | [PARA, LexToken(para,'<para>',446,12133), CONT_PARA, LexToken(cPara,'</para>',446,12173)]
+----------------------------------------
+696] Prod. CONT_ENTRY --> | [CONT_ENTRY, PARA]
+----------------------------------------
+697] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',445,12117), CONT_ENTRY, LexToken(cEntry,'</entry>',447,12188)]
+----------------------------------------
+698] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+699] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+700] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+701] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+702] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+703] Prod. ROW --> | [ROW, LexToken(row,'<row>',424,11515), CONT_ROW, LexToken(cRow,'</row>',448,12203)]
+----------------------------------------
+704] Prod. CONT_T --> | [CONT_T, ROW]
+----------------------------------------
+705] Prod. TBODY --> | [TBODY, LexToken(tbody,'<tbody>',423,11501), CONT_T, LexToken(cTbody,'</tbody>',449,12215)]
+----------------------------------------
+706] Prod. TGROUP --> | [TGROUP, LexToken(tgroup,'<tgroup>',422,11487), TBODY, LexToken(cTgroup,'</tgroup>',450,12228)]
+----------------------------------------
+707] Prod. TABLE_GROUP --> | [TABLE_GROUP, TGROUP]
+----------------------------------------
+708] Prof. INFORMAL_TABLE --> | [INFORMAL_TABLE, LexToken(informalTable,'<informaltable>',421,11467), TABLE_GROUP, LexToken(cInformalTable,'</informaltable>',451,12242)]
+----------------------------------------
+709] Prod. CONT_1 --> | [CONT_1, INFORMAL_TABLE]
+----------------------------------------
+710] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+711] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+712] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+713] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+714] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+715] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+716] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',361,9964), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',452,12262)]
+----------------------------------------
+717] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Installation of a loadbalancer component',455,12298)]
+----------------------------------------
+718] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+719] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',455,12291), CONT_TITLE, LexToken(cTitle,'</title>',455,12338)]
+----------------------------------------
+720] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'To install a loadbalancer component:',457,12358)]
+----------------------------------------
+721] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+722] Prod. PARA --> | [PARA, LexToken(para,'<para>',457,12352), CONT_PARA, LexToken(cPara,'</para>',457,12394)]
+----------------------------------------
+723] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+724] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Change a current directory to the top level installation',461,12450)]
+----------------------------------------
+725] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'one.',462,12513)]
+----------------------------------------
+726] Prod. CONT_2 --> | [CONT_2, LexToken(text,'[0]',462,12559)]
+----------------------------------------
+727] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+728] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://www.google.com">',462,12517), CONT_SECL, LexToken(cLink,'</link>',462,12562)]
+----------------------------------------
+729] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+730] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+731] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+732] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+733] Prod. PARA --> | [PARA, LexToken(para,'<para>',461,12444), CONT_PARA, LexToken(cPara,'</para>',462,12569)]
+----------------------------------------
+734] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+735] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+736] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',460,12427), CONT_ITEM, LexToken(cListItem,'</listitem>',464,12589)]
+----------------------------------------
+737] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Make a directory for the loadbalancer component',467,12630)]
+----------------------------------------
+738] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'files:',468,12684)]
+----------------------------------------
+739] Prod. CONT_2 --> | [CONT_2, LexToken(text,'[1]',469,12739)]
+----------------------------------------
+740] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+741] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://www.google.com">',469,12697), CONT_SECL, LexToken(cLink,'</link>',469,12742)]
+----------------------------------------
+742] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+743] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+744] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+745] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+746] Prod. PARA --> | [PARA, LexToken(para,'<para>',467,12624), CONT_PARA, LexToken(cPara,'</para>',469,12749)]
+----------------------------------------
+747] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+748] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+749] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',466,12607), CONT_ITEM, LexToken(cListItem,'</listitem>',471,12763)]
+----------------------------------------
+750] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Change a directory to the recently created one:',474,12804)]
+----------------------------------------
+751] Prod. CONT_2 --> | [CONT_2, LexToken(text,'[2]',475,12900)]
+----------------------------------------
+752] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+753] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://www.google.com">',475,12858), CONT_SECL, LexToken(cLink,'</link>',475,12903)]
+----------------------------------------
+754] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+755] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+756] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+757] Prod. PARA --> | [PARA, LexToken(para,'<para>',474,12798), CONT_PARA, LexToken(cPara,'</para>',475,12910)]
+----------------------------------------
+758] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+759] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+760] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',473,12781), CONT_ITEM, LexToken(cListItem,'</listitem>',477,12924)]
+----------------------------------------
+761] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Download the package with a loadbalancer component:',480,12965)]
+----------------------------------------
+762] Prod. CONT_2 --> | [CONT_2, LexToken(text,'[3]',481,13065)]
+----------------------------------------
+763] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+764] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://www.google.com">',481,13023), CONT_SECL, LexToken(cLink,'</link>',481,13068)]
+----------------------------------------
+765] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+766] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+767] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+768] Prod. PARA --> | [PARA, LexToken(para,'<para>',480,12959), CONT_PARA, LexToken(cPara,'</para>',481,13075)]
+----------------------------------------
+769] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+770] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+771] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',479,12942), CONT_ITEM, LexToken(cListItem,'</listitem>',483,13089)]
+----------------------------------------
+772] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Untar the loadbalancer component files:',486,13130)]
+----------------------------------------
+773] Prod. CONT_2 --> | [CONT_2, LexToken(text,'[4]',487,13218)]
+----------------------------------------
+774] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+775] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://www.google.com">',487,13176), CONT_SECL, LexToken(cLink,'</link>',487,13221)]
+----------------------------------------
+776] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+777] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+778] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+779] Prod. PARA --> | [PARA, LexToken(para,'<para>',486,13124), CONT_PARA, LexToken(cPara,'</para>',487,13228)]
+----------------------------------------
+780] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+781] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+782] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',485,13107), CONT_ITEM, LexToken(cListItem,'</listitem>',489,13242)]
+----------------------------------------
+783] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Open configuration file ',492,13283)]
+----------------------------------------
+784] Prod. CONT_2 --> | [CONT_2, LexToken(text,'config.ini',492,13317)]
+----------------------------------------
+785] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+786] Prod. EMPHASIS --> | [EMPHASIS, LexToken(emphasis,'<emphasis>',492,13307), CONT_SECL, LexToken(cEmphasis,'</emphasis>',492,13327)]
+----------------------------------------
+787] Prod. ELEM_PARA --> | [ELEM_PARA, EMPHASIS]
+----------------------------------------
+788] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,"in any text editor and point the loadbalancer to the coordinator's IP address and port number: ",492,13339)]
+----------------------------------------
+789] Prod. CONT_2 --> | [CONT_2, LexToken(text,'[5]',492,13476)]
+----------------------------------------
+790] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+791] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://www.google.com">',492,13434), CONT_SECL, LexToken(cLink,'</link>',492,13479)]
+----------------------------------------
+792] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+793] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+794] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+795] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+796] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+797] Prod. PARA --> | [PARA, LexToken(para,'<para>',492,13277), CONT_PARA, LexToken(cPara,'</para>',492,13486)]
+----------------------------------------
+798] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+799] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+800] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',491,13260), CONT_ITEM, LexToken(cListItem,'</listitem>',494,13506)]
+----------------------------------------
+801] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Change directory to the',497,13547)]
+----------------------------------------
+802] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'folder: ',498,13577)]
+----------------------------------------
+803] Prod. CONT_2 --> | [CONT_2, LexToken(text,'[6]',499,13634)]
+----------------------------------------
+804] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+805] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://www.google.com">',499,13592), CONT_SECL, LexToken(cLink,'</link>',499,13637)]
+----------------------------------------
+806] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+807] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+808] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+809] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+810] Prod. PARA --> | [PARA, LexToken(para,'<para>',497,13541), CONT_PARA, LexToken(cPara,'</para>',499,13644)]
+----------------------------------------
+811] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+812] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+813] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',496,13524), CONT_ITEM, LexToken(cListItem,'</listitem>',500,13657)]
+----------------------------------------
+814] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Check if the file ',503,13698)]
+----------------------------------------
+815] Prod. CONT_2 --> | [CONT_2, LexToken(text,'stdf_loadbalancer.sh',503,13726)]
+----------------------------------------
+816] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+817] Prod. EMPHASIS --> | [EMPHASIS, LexToken(emphasis,'<emphasis>',503,13716), CONT_SECL, LexToken(cEmphasis,'</emphasis>',503,13746)]
+----------------------------------------
+818] Prod. ELEM_PARA --> | [ELEM_PARA, EMPHASIS]
+----------------------------------------
+819] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'have an execution bitturned on ',503,13758)]
+----------------------------------------
+820] Prod. CONT_2 --> | [CONT_2, LexToken(text,'[7]',504,13838)]
+----------------------------------------
+821] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+822] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://www.google.com">',504,13796), CONT_SECL, LexToken(cLink,'</link>',504,13841)]
+----------------------------------------
+823] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+824] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'.',504,13848)]
+----------------------------------------
+825] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+826] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+827] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+828] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+829] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+830] Prod. PARA --> | [PARA, LexToken(para,'<para>',503,13692), CONT_PARA, LexToken(cPara,'</para>',504,13849)]
+----------------------------------------
+831] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+832] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+833] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',502,13675), CONT_ITEM, LexToken(cListItem,'</listitem>',505,13862)]
+----------------------------------------
+834] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Run the loadbalancer component: ',508,13903)]
+----------------------------------------
+835] Prod. CONT_2 --> | [CONT_2, LexToken(text,'[8]',509,13984)]
+----------------------------------------
+836] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+837] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://www.google.com">',509,13942), CONT_SECL, LexToken(cLink,'</link>',509,13987)]
+----------------------------------------
+838] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+839] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+840] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+841] Prod. PARA --> | [PARA, LexToken(para,'<para>',508,13897), CONT_PARA, LexToken(cPara,'</para>',509,13994)]
+----------------------------------------
+842] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+843] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+844] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',507,13880), CONT_ITEM, LexToken(cListItem,'</listitem>',510,14007)]
+----------------------------------------
+845] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',459,12407), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',511,14023)]
+----------------------------------------
+846] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+847] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+848] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+849] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',454,12277), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',512,14042)]
+----------------------------------------
+850] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Installation of a filtering component',515,14078)]
+----------------------------------------
+851] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+852] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',515,14071), CONT_TITLE, LexToken(cTitle,'</title>',515,14115)]
+----------------------------------------
+853] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'To install a filtering component:',517,14135)]
+----------------------------------------
+854] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+855] Prod. PARA --> | [PARA, LexToken(para,'<para>',517,14129), CONT_PARA, LexToken(cPara,'</para>',517,14168)]
+----------------------------------------
+856] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+857] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+858] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',514,14057), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',518,14179)]
+----------------------------------------
+859] Prod. SECTIONS --> | [SECTIONS, SECTION]
+----------------------------------------
+860] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+861] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+862] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',351,9638), TITLEH2, CONT_A_S, SECTIONS, LexToken(cSection,'</section>',519,14192)]
+----------------------------------------
+863] Prod. SECTIONS --> | [SECTIONS, SECTION]
+----------------------------------------
+864] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+865] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',261,7217), TITLEH2, CONT_A_S, SECTIONS, LexToken(cSection,'</section>',520,14204)]
+----------------------------------------
+866] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Authoring filtering rules',523,14241)]
+----------------------------------------
+867] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+868] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',523,14234), CONT_TITLE, LexToken(cTitle,'</title>',523,14266)]
+----------------------------------------
+869] Prod. CONT_2 --> | [CONT_2, LexToken(text,'This section only briefly describes filtering rules structure. For',526,14300)]
+----------------------------------------
+870] Prod. CONT_2 --> | [CONT_2, LexToken(text,'a detailed information take a look into the "STDF filtering rules',527,14370)]
+----------------------------------------
+871] Prod. CONT_2 --> | [CONT_2, LexToken(text,'language reference" manual (supplied separately).',528,14439)]
+----------------------------------------
+872] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+873] Prod. CONT_SECL --> | [CONT_SECL, CONT_2, CONT_SECL]
+----------------------------------------
+874] Prod. CONT_SECL --> | [CONT_SECL, CONT_2, CONT_SECL]
+----------------------------------------
+875] Prod. EMPHASIS --> | [EMPHASIS, LexToken(emphasis,'<emphasis>',525,14286), CONT_SECL, LexToken(cEmphasis,'</emphasis>',529,14491)]
+----------------------------------------
+876] Prod. ELEM_PARA --> | [ELEM_PARA, EMPHASIS]
+----------------------------------------
+877] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+878] Prod. PARA --> | [PARA, LexToken(para,'<para>',524,14277), CONT_PARA, LexToken(cPara,'</para>',529,14502)]
+----------------------------------------
+879] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+880] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Filtering rules are defined utilizing a filtering language that uses',531,14519)]
+----------------------------------------
+881] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Erlang language syntax as a basis.',532,14590)]
+----------------------------------------
+882] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+883] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+884] Prod. PARA --> | [PARA, LexToken(para,'<para>',531,14513), CONT_PARA, LexToken(cPara,'</para>',532,14624)]
+----------------------------------------
+885] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+886] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'Each filtering rule includes three elements (so called',534,14641)]
+----------------------------------------
+887] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'"definitions"):',535,14698)]
+----------------------------------------
+888] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+889] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+890] Prod. PARA --> | [PARA, LexToken(para,'<para>',534,14635), CONT_PARA, LexToken(cPara,'</para>',535,14713)]
+----------------------------------------
+891] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+892] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'data definition - describes nature of data to be filtered,',539,14763)]
+----------------------------------------
+893] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'including the pattern how the incoming data can be recognized (e.g.',540,14826)]
+----------------------------------------
+894] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'port, input url, data header); the data definition assigns an',541,14898)]
+----------------------------------------
+895] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'identifier to the dataset so that the data correlation and filter',542,14964)]
+----------------------------------------
+896] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'rules can refer to it;',543,15034)]
+----------------------------------------
+897] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+898] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+899] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+900] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+901] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+902] Prod. PARA --> | [PARA, LexToken(para,'<para>',539,14757), CONT_PARA, LexToken(cPara,'</para>',543,15056)]
+----------------------------------------
+903] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+904] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+905] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',538,14742), CONT_ITEM, LexToken(cListItem,'</listitem>',544,15067)]
+----------------------------------------
+906] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'correlation definition - describes how that data depends on',547,15104)]
+----------------------------------------
+907] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'itself or some other identified dataset;',548,15168)]
+----------------------------------------
+908] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+909] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+910] Prod. PARA --> | [PARA, LexToken(para,'<para>',547,15098), CONT_PARA, LexToken(cPara,'</para>',548,15208)]
+----------------------------------------
+911] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+912] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+913] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',546,15083), CONT_ITEM, LexToken(cListItem,'</listitem>',549,15219)]
+----------------------------------------
+914] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'filter definition - describes what actions are to be taken for',552,15256)]
+----------------------------------------
+915] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'the data, when it arrives.',553,15323)]
+----------------------------------------
+916] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+917] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+918] Prod. PARA --> | [PARA, LexToken(para,'<para>',552,15250), CONT_PARA, LexToken(cPara,'</para>',553,15349)]
+----------------------------------------
+919] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+920] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+921] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',551,15235), CONT_ITEM, LexToken(cListItem,'</listitem>',554,15360)]
+----------------------------------------
+922] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',537,14724), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',555,15374)]
+----------------------------------------
+923] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+924] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+925] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+926] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+927] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+928] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',522,14219), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',556,15393)]
+----------------------------------------
+929] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Using and verifying filtered data',559,15430)]
+----------------------------------------
+930] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+931] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',559,15423), CONT_TITLE, LexToken(cTitle,'</title>',559,15463)]
+----------------------------------------
+932] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'The filtering cluster appoints one of its nodes automatically as a',561,15481)]
+----------------------------------------
+933] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'forwarder, based on the load of the servers. The forwarder collects the',562,15550)]
+----------------------------------------
+934] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'data from each filtering node, combines it into one stream, and sends it',563,15624)]
+----------------------------------------
+935] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'to whatever server is designated as the final receiver',564,15699)]
+----------------------------------------
+936] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'(destination).',565,15756)]
+----------------------------------------
+937] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+938] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+939] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+940] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+941] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+942] Prod. PARA --> | [PARA, LexToken(para,'<para>',561,15475), CONT_PARA, LexToken(cPara,'</para>',565,15770)]
+----------------------------------------
+943] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+944] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,"The filtering components (nodes) don't store any data - they",568,15808)]
+----------------------------------------
+945] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'only perform filtering. You have to define and configure the storage',569,15872)]
+----------------------------------------
+946] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'server beyond the STDF deployment that will perform any and all',570,15944)]
+----------------------------------------
+947] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'database processing. A connection to a designated DB server is',571,16011)]
+----------------------------------------
+948] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'configured within a coordinator component configuration file',572,16077)]
+----------------------------------------
+949] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'config.ini.',573,16141)]
+----------------------------------------
+950] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+951] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+952] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+953] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+954] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+955] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+956] Prod. PARA --> | [PARA, LexToken(para,'<para>',568,15802), CONT_PARA, LexToken(cPara,'</para>',573,16152)]
+----------------------------------------
+957] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+958] Prod. CONT_IMPORTANT --> | [CONT_IMPORTANT, CONT_1]
+----------------------------------------
+959] Prod. IMPORTANT --> | [IMPORTANT, LexToken(important,'<important>',567,15787), CONT_IMPORTANT, LexToken(cImportant,'</important>',574,16162)]
+----------------------------------------
+960] Prod. ELEM_PARA --> | [ELEM_PARA, IMPORTANT]
+----------------------------------------
+961] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+962] Prod. PARA --> | [PARA, LexToken(para,'<para>',567,15781), CONT_PARA, LexToken(cPara,'</para>',574,16174)]
+----------------------------------------
+963] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+964] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'The forwarder can optionally inject additional data headers and',576,16191)]
+----------------------------------------
+965] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'trailers into the initial data block for easier recognition of its nature',577,16257)]
+----------------------------------------
+966] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'- source transmitter/generator. The trailer may contain a CRC for checking',578,16333)]
+----------------------------------------
+967] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'data integrity. The algorithm for the CRC is shown below:',579,16410)]
+----------------------------------------
+968] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+969] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+970] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+971] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+972] Prod. PARA --> | [PARA, LexToken(para,'<para>',576,16185), CONT_PARA, LexToken(cPara,'</para>',579,16467)]
+----------------------------------------
+973] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+974] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+975] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+976] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+977] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',558,15408), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',580,16478)]
+----------------------------------------
+978] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Troubleshooting',583,16515)]
+----------------------------------------
+979] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+980] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',583,16508), CONT_TITLE, LexToken(cTitle,'</title>',583,16530)]
+----------------------------------------
+981] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Problem: no connection from a filter node to a',586,16562)]
+----------------------------------------
+982] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'coordinator',587,16612)]
+----------------------------------------
+983] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+984] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE, CONT_TITLE]
+----------------------------------------
+985] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',586,16555), CONT_TITLE, LexToken(cTitle,'</title>',587,16623)]
+----------------------------------------
+986] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Possible reasons',593,16701)]
+----------------------------------------
+987] Prod. ENTRYH --> | [ENTRYH, LexToken(entry,'<entry>',593,16694), CONT_ENTRY, LexToken(cEntry,'</entry>',593,16717)]
+----------------------------------------
+988] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'How to solve a problem',595,16740)]
+----------------------------------------
+989] Prod. ENTRYH --> | [ENTRYH, LexToken(entry,'<entry>',595,16733), CONT_ENTRY, LexToken(cEntry,'</entry>',595,16762)]
+----------------------------------------
+990] Prod. CONT_ROWH --> | [CONT_ROWH, ENTRYH]
+----------------------------------------
+991] Prod. CONT_ROWH --> | [CONT_ROWH, ENTRYH, CONT_ROWH]
+----------------------------------------
+992] Prod. ROWH --> | [ROWH, LexToken(row,'<row>',592,16682), CONT_ROWH, LexToken(cRow,'</row>',596,16776)]
+----------------------------------------
+993] Prod. CONT_TH --> | [CONT_TH, ROWH]
+----------------------------------------
+994] Prod. THEAD --> | [THEAD, LexToken(thead,'<thead>',591,16669), CONT_TH, LexToken(cThead,'</thead>',597,16787)]
+----------------------------------------
+995] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'are not correct or were not set.',602,16894)]
+----------------------------------------
+996] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,"Any of coordinator's node IP settings of a filter node",601,16833), CONT_ENTRY]
+----------------------------------------
+997] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',601,16826), CONT_ENTRY, LexToken(cEntry,'</entry>',602,16926)]
+----------------------------------------
+998] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'filters.',605,16998)]
+----------------------------------------
+999] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Check for a correct IP and port numbers of',604,16949), CONT_ENTRY]
+----------------------------------------
+1000] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',604,16942), CONT_ENTRY, LexToken(cEntry,'</entry>',605,17006)]
+----------------------------------------
+1001] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1002] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1003] Prod. ROW --> | [ROW, LexToken(row,'<row>',600,16814), CONT_ROW, LexToken(cRow,'</row>',606,17020)]
+----------------------------------------
+1004] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'coordinator',610,17111)]
+----------------------------------------
+1005] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,"Firewall rules don't allow filter packets to reach a",609,17052), CONT_ENTRY]
+----------------------------------------
+1006] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',609,17045), CONT_ENTRY, LexToken(cEntry,'</entry>',610,17122)]
+----------------------------------------
+1007] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'rules) are correct.',613,17209)]
+----------------------------------------
+1008] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Check if coordinator firewall settings (open ports and IP',612,17145), CONT_ENTRY]
+----------------------------------------
+1009] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',612,17138), CONT_ENTRY, LexToken(cEntry,'</entry>',613,17228)]
+----------------------------------------
+1010] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1011] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1012] Prod. ROW --> | [ROW, LexToken(row,'<row>',608,17033), CONT_ROW, LexToken(cRow,'</row>',614,17242)]
+----------------------------------------
+1013] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Coordinator node is not running',617,17274)]
+----------------------------------------
+1014] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',617,17267), CONT_ENTRY, LexToken(cEntry,'</entry>',617,17305)]
+----------------------------------------
+1015] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Check if coordinator is really running.',619,17328)]
+----------------------------------------
+1016] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',619,17321), CONT_ENTRY, LexToken(cEntry,'</entry>',619,17367)]
+----------------------------------------
+1017] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1018] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1019] Prod. ROW --> | [ROW, LexToken(row,'<row>',616,17255), CONT_ROW, LexToken(cRow,'</row>',620,17381)]
+----------------------------------------
+1020] Prod. CONT_T --> | [CONT_T, ROW]
+----------------------------------------
+1021] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+1022] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+1023] Prod. TBODY --> | [TBODY, LexToken(tbody,'<tbody>',599,16801), CONT_T, LexToken(cTbody,'</tbody>',621,17392)]
+----------------------------------------
+1024] Prod. TGROUP --> | [TGROUP, LexToken(tgroup,'<tgroup>',590,16656), THEAD, TBODY, LexToken(cTgroup,'</tgroup>',622,17405)]
+----------------------------------------
+1025] Prod. TABLE_GROUP --> | [TABLE_GROUP, TGROUP]
+----------------------------------------
+1026] Prof. INFORMAL_TABLE --> | [INFORMAL_TABLE, LexToken(informalTable,'<informaltable>',589,16636), TABLE_GROUP, LexToken(cInformalTable,'</informaltable>',623,17418)]
+----------------------------------------
+1027] Prod. CONT_1 --> | [CONT_1, INFORMAL_TABLE]
+----------------------------------------
+1028] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+1029] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',585,16542), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',624,17437)]
+----------------------------------------
+1030] Prod. CONT_A_S --> | [CONT_A_S, SECTION]
+----------------------------------------
+1031] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,"Problem: filtering node doesn't receive filtering rules",627,17479)]
+----------------------------------------
+1032] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+1033] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',627,17472), CONT_TITLE, LexToken(cTitle,'</title>',627,17534)]
+----------------------------------------
+1034] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Possible reason',633,17612)]
+----------------------------------------
+1035] Prod. ENTRYH --> | [ENTRYH, LexToken(entry,'<entry>',633,17605), CONT_ENTRY, LexToken(cEntry,'</entry>',633,17627)]
+----------------------------------------
+1036] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'How to solve a problem',635,17650)]
+----------------------------------------
+1037] Prod. ENTRYH --> | [ENTRYH, LexToken(entry,'<entry>',635,17643), CONT_ENTRY, LexToken(cEntry,'</entry>',635,17672)]
+----------------------------------------
+1038] Prod. CONT_ROWH --> | [CONT_ROWH, ENTRYH]
+----------------------------------------
+1039] Prod. CONT_ROWH --> | [CONT_ROWH, ENTRYH, CONT_ROWH]
+----------------------------------------
+1040] Prod. ROWH --> | [ROWH, LexToken(row,'<row>',632,17593), CONT_ROWH, LexToken(cRow,'</row>',636,17686)]
+----------------------------------------
+1041] Prod. CONT_TH --> | [CONT_TH, ROWH]
+----------------------------------------
+1042] Prod. THEAD --> | [THEAD, LexToken(thead,'<thead>',631,17580), CONT_TH, LexToken(cThead,'</thead>',637,17697)]
+----------------------------------------
+1043] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'are not correct or were not set.',642,17804)]
+----------------------------------------
+1044] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,"Any of coordinator's node IP settings of a filter node",641,17743), CONT_ENTRY]
+----------------------------------------
+1045] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',641,17736), CONT_ENTRY, LexToken(cEntry,'</entry>',642,17836)]
+----------------------------------------
+1046] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,"problem's first solution).",645,17916)]
+----------------------------------------
+1047] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Check for a correct IP and port numbers (see above',644,17859), CONT_ENTRY]
+----------------------------------------
+1048] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',644,17852), CONT_ENTRY, LexToken(cEntry,'</entry>',645,17942)]
+----------------------------------------
+1049] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1050] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1051] Prod. ROW --> | [ROW, LexToken(row,'<row>',640,17724), CONT_ROW, LexToken(cRow,'</row>',646,17956)]
+----------------------------------------
+1052] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Errors in filtering language',649,17988)]
+----------------------------------------
+1053] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',649,17981), CONT_ENTRY, LexToken(cEntry,'</entry>',649,18016)]
+----------------------------------------
+1054] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,"Check coordinator's log file for errors",651,18039)]
+----------------------------------------
+1055] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',651,18032), CONT_ENTRY, LexToken(cEntry,'</entry>',651,18078)]
+----------------------------------------
+1056] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1057] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1058] Prod. ROW --> | [ROW, LexToken(row,'<row>',648,17969), CONT_ROW, LexToken(cRow,'</row>',652,18092)]
+----------------------------------------
+1059] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Issues with network connectivity or software used',655,18124)]
+----------------------------------------
+1060] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',655,18117), CONT_ENTRY, LexToken(cEntry,'</entry>',655,18173)]
+----------------------------------------
+1061] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'firewall settings',658,18254)]
+----------------------------------------
+1062] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,"Check coordinator's log file for errors; check node",657,18196), CONT_ENTRY]
+----------------------------------------
+1063] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',657,18189), CONT_ENTRY, LexToken(cEntry,'</entry>',658,18271)]
+----------------------------------------
+1064] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1065] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1066] Prod. ROW --> | [ROW, LexToken(row,'<row>',654,18105), CONT_ROW, LexToken(cRow,'</row>',659,18285)]
+----------------------------------------
+1067] Prod. CONT_T --> | [CONT_T, ROW]
+----------------------------------------
+1068] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+1069] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+1070] Prod. TBODY --> | [TBODY, LexToken(tbody,'<tbody>',639,17711), CONT_T, LexToken(cTbody,'</tbody>',660,18296)]
+----------------------------------------
+1071] Prod. TGROUP --> | [TGROUP, LexToken(tgroup,'<tgroup>',630,17567), THEAD, TBODY, LexToken(cTgroup,'</tgroup>',661,18309)]
+----------------------------------------
+1072] Prod. TABLE_GROUP --> | [TABLE_GROUP, TGROUP]
+----------------------------------------
+1073] Prof. INFORMAL_TABLE --> | [INFORMAL_TABLE, LexToken(informalTable,'<informaltable>',629,17547), TABLE_GROUP, LexToken(cInformalTable,'</informaltable>',662,18322)]
+----------------------------------------
+1074] Prod. CONT_1 --> | [CONT_1, INFORMAL_TABLE]
+----------------------------------------
+1075] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+1076] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',626,17454), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',663,18341)]
+----------------------------------------
+1077] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,"Problem: filtering node doesn't receive data",666,18375)]
+----------------------------------------
+1078] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+1079] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',666,18368), CONT_TITLE, LexToken(cTitle,'</title>',666,18419)]
+----------------------------------------
+1080] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Possible reason',672,18496)]
+----------------------------------------
+1081] Prod. ENTRYH --> | [ENTRYH, LexToken(entry,'<entry>',672,18489), CONT_ENTRY, LexToken(cEntry,'</entry>',672,18511)]
+----------------------------------------
+1082] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'How to solve a problem',674,18533)]
+----------------------------------------
+1083] Prod. ENTRYH --> | [ENTRYH, LexToken(entry,'<entry>',674,18526), CONT_ENTRY, LexToken(cEntry,'</entry>',674,18555)]
+----------------------------------------
+1084] Prod. CONT_ROWH --> | [CONT_ROWH, ENTRYH]
+----------------------------------------
+1085] Prod. CONT_ROWH --> | [CONT_ROWH, ENTRYH, CONT_ROWH]
+----------------------------------------
+1086] Prod. ROWH --> | [ROWH, LexToken(row,'<row>',671,18478), CONT_ROWH, LexToken(cRow,'</row>',675,18569)]
+----------------------------------------
+1087] Prod. CONT_TH --> | [CONT_TH, ROWH]
+----------------------------------------
+1088] Prod. THEAD --> | [THEAD, LexToken(thead,'<thead>',670,18465), CONT_TH, LexToken(cThead,'</thead>',676,18580)]
+----------------------------------------
+1089] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Loadbalancer is not running',680,18625)]
+----------------------------------------
+1090] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',680,18618), CONT_ENTRY, LexToken(cEntry,'</entry>',680,18652)]
+----------------------------------------
+1091] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Check for errors in loadbalancer log files',682,18674)]
+----------------------------------------
+1092] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',682,18667), CONT_ENTRY, LexToken(cEntry,'</entry>',682,18716)]
+----------------------------------------
+1093] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1094] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1095] Prod. ROW --> | [ROW, LexToken(row,'<row>',679,18607), CONT_ROW, LexToken(cRow,'</row>',683,18730)]
+----------------------------------------
+1096] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Ports are close or filtered by firewall',686,18761)]
+----------------------------------------
+1097] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',686,18754), CONT_ENTRY, LexToken(cEntry,'</entry>',686,18800)]
+----------------------------------------
+1098] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Check node firewall settings',688,18822)]
+----------------------------------------
+1099] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',688,18815), CONT_ENTRY, LexToken(cEntry,'</entry>',688,18850)]
+----------------------------------------
+1100] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1101] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1102] Prod. ROW --> | [ROW, LexToken(row,'<row>',685,18743), CONT_ROW, LexToken(cRow,'</row>',689,18864)]
+----------------------------------------
+1103] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'There are no actual data received',692,18895)]
+----------------------------------------
+1104] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',692,18888), CONT_ENTRY, LexToken(cEntry,'</entry>',692,18928)]
+----------------------------------------
+1105] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Check loadbalancer log file of transmitted data',694,18950)]
+----------------------------------------
+1106] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',694,18943), CONT_ENTRY, LexToken(cEntry,'</entry>',694,18997)]
+----------------------------------------
+1107] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1108] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1109] Prod. ROW --> | [ROW, LexToken(row,'<row>',691,18877), CONT_ROW, LexToken(cRow,'</row>',695,19011)]
+----------------------------------------
+1110] Prod. CONT_T --> | [CONT_T, ROW]
+----------------------------------------
+1111] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+1112] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+1113] Prod. TBODY --> | [TBODY, LexToken(tbody,'<tbody>',678,18594), CONT_T, LexToken(cTbody,'</tbody>',696,19022)]
+----------------------------------------
+1114] Prod. TGROUP --> | [TGROUP, LexToken(tgroup,'<tgroup>',669,18452), THEAD, TBODY, LexToken(cTgroup,'</tgroup>',697,19035)]
+----------------------------------------
+1115] Prod. TABLE_GROUP --> | [TABLE_GROUP, TGROUP]
+----------------------------------------
+1116] Prof. INFORMAL_TABLE --> | [INFORMAL_TABLE, LexToken(informalTable,'<informaltable>',668,18432), TABLE_GROUP, LexToken(cInformalTable,'</informaltable>',698,19048)]
+----------------------------------------
+1117] Prod. CONT_1 --> | [CONT_1, INFORMAL_TABLE]
+----------------------------------------
+1118] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+1119] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',665,18355), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',699,19067)]
+----------------------------------------
+1120] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,"Problem: loadbalancer doesn't receive any data",702,19100)]
+----------------------------------------
+1121] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+1122] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',702,19093), CONT_TITLE, LexToken(cTitle,'</title>',702,19146)]
+----------------------------------------
+1123] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Possible reason',708,19221)]
+----------------------------------------
+1124] Prod. ENTRYH --> | [ENTRYH, LexToken(entry,'<entry>',708,19214), CONT_ENTRY, LexToken(cEntry,'</entry>',708,19236)]
+----------------------------------------
+1125] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'How to solve a problem',710,19258)]
+----------------------------------------
+1126] Prod. ENTRYH --> | [ENTRYH, LexToken(entry,'<entry>',710,19251), CONT_ENTRY, LexToken(cEntry,'</entry>',710,19280)]
+----------------------------------------
+1127] Prod. CONT_ROWH --> | [CONT_ROWH, ENTRYH]
+----------------------------------------
+1128] Prod. CONT_ROWH --> | [CONT_ROWH, ENTRYH, CONT_ROWH]
+----------------------------------------
+1129] Prod. ROWH --> | [ROWH, LexToken(row,'<row>',707,19203), CONT_ROWH, LexToken(cRow,'</row>',711,19293)]
+----------------------------------------
+1130] Prod. CONT_TH --> | [CONT_TH, ROWH]
+----------------------------------------
+1131] Prod. THEAD --> | [THEAD, LexToken(thead,'<thead>',706,19191), CONT_TH, LexToken(cThead,'</thead>',712,19304)]
+----------------------------------------
+1132] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Loadbalancer is not running',716,19348)]
+----------------------------------------
+1133] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',716,19341), CONT_ENTRY, LexToken(cEntry,'</entry>',716,19375)]
+----------------------------------------
+1134] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,"loadbalancer's log files.",719,19459)]
+----------------------------------------
+1135] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Check if loadbalancer is running and check for errors in',718,19397), CONT_ENTRY]
+----------------------------------------
+1136] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',718,19390), CONT_ENTRY, LexToken(cEntry,'</entry>',719,19484)]
+----------------------------------------
+1137] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1138] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1139] Prod. ROW --> | [ROW, LexToken(row,'<row>',715,19330), CONT_ROW, LexToken(cRow,'</row>',720,19497)]
+----------------------------------------
+1140] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Ports are close or filtered by firewall',723,19527)]
+----------------------------------------
+1141] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',723,19520), CONT_ENTRY, LexToken(cEntry,'</entry>',723,19566)]
+----------------------------------------
+1142] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Check loadbalancer firewall settings',725,19588)]
+----------------------------------------
+1143] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',725,19581), CONT_ENTRY, LexToken(cEntry,'</entry>',725,19624)]
+----------------------------------------
+1144] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1145] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1146] Prod. ROW --> | [ROW, LexToken(row,'<row>',722,19509), CONT_ROW, LexToken(cRow,'</row>',726,19637)]
+----------------------------------------
+1147] Prod. CONT_T --> | [CONT_T, ROW]
+----------------------------------------
+1148] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+1149] Prod. TBODY --> | [TBODY, LexToken(tbody,'<tbody>',714,19318), CONT_T, LexToken(cTbody,'</tbody>',727,19648)]
+----------------------------------------
+1150] Prod. TGROUP --> | [TGROUP, LexToken(tgroup,'<tgroup>',705,19178), THEAD, TBODY, LexToken(cTgroup,'</tgroup>',728,19660)]
+----------------------------------------
+1151] Prod. TABLE_GROUP --> | [TABLE_GROUP, TGROUP]
+----------------------------------------
+1152] Prof. INFORMAL_TABLE --> | [INFORMAL_TABLE, LexToken(informalTable,'<informaltable>',704,19159), TABLE_GROUP, LexToken(cInformalTable,'</informaltable>',729,19673)]
+----------------------------------------
+1153] Prod. CONT_1 --> | [CONT_1, INFORMAL_TABLE]
+----------------------------------------
+1154] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+1155] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',701,19081), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',730,19692)]
+----------------------------------------
+1156] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Problem: Filter produces incorrect results',733,19726)]
+----------------------------------------
+1157] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+1158] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',733,19719), CONT_TITLE, LexToken(cTitle,'</title>',733,19768)]
+----------------------------------------
+1159] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Possible reason',739,19843)]
+----------------------------------------
+1160] Prod. ENTRYH --> | [ENTRYH, LexToken(entry,'<entry>',739,19836), CONT_ENTRY, LexToken(cEntry,'</entry>',739,19858)]
+----------------------------------------
+1161] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'How to solve a problem',741,19880)]
+----------------------------------------
+1162] Prod. ENTRYH --> | [ENTRYH, LexToken(entry,'<entry>',741,19873), CONT_ENTRY, LexToken(cEntry,'</entry>',741,19902)]
+----------------------------------------
+1163] Prod. CONT_ROWH --> | [CONT_ROWH, ENTRYH]
+----------------------------------------
+1164] Prod. CONT_ROWH --> | [CONT_ROWH, ENTRYH, CONT_ROWH]
+----------------------------------------
+1165] Prod. ROWH --> | [ROWH, LexToken(row,'<row>',738,19825), CONT_ROWH, LexToken(cRow,'</row>',742,19915)]
+----------------------------------------
+1166] Prod. CONT_TH --> | [CONT_TH, ROWH]
+----------------------------------------
+1167] Prod. THEAD --> | [THEAD, LexToken(thead,'<thead>',737,19813), CONT_TH, LexToken(cThead,'</thead>',743,19926)]
+----------------------------------------
+1168] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Incorrect filter initial setup',747,19970)]
+----------------------------------------
+1169] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',747,19963), CONT_ENTRY, LexToken(cEntry,'</entry>',747,20000)]
+----------------------------------------
+1170] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'files for possible issues',750,20102)]
+----------------------------------------
+1171] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Run node with higher level of verbosity: start them withand then check log',749,20022), CONT_ENTRY]
+----------------------------------------
+1172] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',749,20015), CONT_ENTRY, LexToken(cEntry,'</entry>',750,20127)]
+----------------------------------------
+1173] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1174] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1175] Prod. ROW --> | [ROW, LexToken(row,'<row>',746,19952), CONT_ROW, LexToken(cRow,'</row>',751,20140)]
+----------------------------------------
+1176] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'Incorrect filter rules',754,20170)]
+----------------------------------------
+1177] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',754,20163), CONT_ENTRY, LexToken(cEntry,'</entry>',754,20192)]
+----------------------------------------
+1178] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,'syntax: run',757,20271)]
+----------------------------------------
+1179] Prod. CONT_ENTRY --> | [CONT_ENTRY, LexToken(text,"Run filter language parser and validate it's actual",756,20214), CONT_ENTRY]
+----------------------------------------
+1180] Prod. ENTRY --> | [ENTRY, LexToken(entry,'<entry>',756,20207), CONT_ENTRY, LexToken(cEntry,'</entry>',757,20282)]
+----------------------------------------
+1181] Prod. CONT_ROW --> | [CONT_ROW, ENTRY]
+----------------------------------------
+1182] Prod. CONT_ROW --> | [CONT_ROW, ENTRY, CONT_ROW]
+----------------------------------------
+1183] Prod. ROW --> | [ROW, LexToken(row,'<row>',753,20152), CONT_ROW, LexToken(cRow,'</row>',758,20295)]
+----------------------------------------
+1184] Prod. CONT_T --> | [CONT_T, ROW]
+----------------------------------------
+1185] Prod. CONT_T --> | [CONT_T, ROW, CONT_T]
+----------------------------------------
+1186] Prod. TBODY --> | [TBODY, LexToken(tbody,'<tbody>',745,19940), CONT_T, LexToken(cTbody,'</tbody>',759,20306)]
+----------------------------------------
+1187] Prod. TGROUP --> | [TGROUP, LexToken(tgroup,'<tgroup>',736,19800), THEAD, TBODY, LexToken(cTgroup,'</tgroup>',760,20318)]
+----------------------------------------
+1188] Prod. TABLE_GROUP --> | [TABLE_GROUP, TGROUP]
+----------------------------------------
+1189] Prof. INFORMAL_TABLE --> | [INFORMAL_TABLE, LexToken(informalTable,'<informaltable>',735,19781), TABLE_GROUP, LexToken(cInformalTable,'</informaltable>',761,20331)]
+----------------------------------------
+1190] Prod. CONT_1 --> | [CONT_1, INFORMAL_TABLE]
+----------------------------------------
+1191] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+1192] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',732,19706), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',762,20350)]
+----------------------------------------
+1193] Prod. SECTIONS --> | [SECTIONS, SECTION]
+----------------------------------------
+1194] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+1195] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+1196] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+1197] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',582,16493), TITLEH2, CONT_A_S, SECTIONS, LexToken(cSection,'</section>',763,20364)]
+----------------------------------------
+1198] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'Technology stack behind this sample document',766,20398)]
+----------------------------------------
+1199] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+1200] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',766,20391), CONT_TITLE, LexToken(cTitle,'</title>',766,20442)]
+----------------------------------------
+1201] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'The source files of this document:',768,20460)]
+----------------------------------------
+1202] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+1203] Prod. PARA --> | [PARA, LexToken(para,'<para>',768,20454), CONT_PARA, LexToken(cPara,'</para>',768,20494)]
+----------------------------------------
+1204] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+1205] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'were completely written in ',772,20544)]
+----------------------------------------
+1206] Prod. CONT_2 --> | [CONT_2, LexToken(text,'DocBook/XML 5.1',772,20619)]
+----------------------------------------
+1207] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1208] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://docbook.org/xml/5.1/">',772,20571), CONT_SECL, LexToken(cLink,'</link>',772,20634)]
+----------------------------------------
+1209] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1210] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'format which is ',772,20642)]
+----------------------------------------
+1211] Prod. CONT_2 --> | [CONT_2, LexToken(text,'OASIS Standard',772,20745)]
+----------------------------------------
+1212] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1213] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=docbook">',772,20658), CONT_SECL, LexToken(cLink,'</link>',772,20759)]
+----------------------------------------
+1214] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1215] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,';',772,20766)]
+----------------------------------------
+1216] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+1217] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1218] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1219] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1220] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1221] Prod. PARA --> | [PARA, LexToken(para,'<para>',772,20538), CONT_PARA, LexToken(cPara,'</para>',772,20767)]
+----------------------------------------
+1222] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+1223] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+1224] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',771,20523), CONT_ITEM, LexToken(cListItem,'</listitem>',773,20778)]
+----------------------------------------
+1225] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'were WYSYWYM-authored by using of ',776,20815)]
+----------------------------------------
+1226] Prod. CONT_2 --> | [CONT_2, LexToken(text,'XMLmind XML Editor',776,20902)]
+----------------------------------------
+1227] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1228] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="http://www.xmlmind.com/xmleditor/">',776,20849), CONT_SECL, LexToken(cLink,'</link>',776,20920)]
+----------------------------------------
+1229] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1230] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'version 7.3 by ',776,20928)]
+----------------------------------------
+1231] Prod. CONT_2 --> | [CONT_2, LexToken(text,'XMLmind Software',776,20985)]
+----------------------------------------
+1232] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1233] Prod. LINK --> | [LINK, LexToken(link,'<link\txlink:href="http://www.xmlmind.com">',776,20943), CONT_SECL, LexToken(cLink,'</link>',776,21001)]
+----------------------------------------
+1234] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1235] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,"installed on author's desktop running ",776,21009)]
+----------------------------------------
+1236] Prod. CONT_2 --> | [CONT_2, LexToken(text,'Debian GNU/Linux 10.11\t(buster)',776,21090)]
+----------------------------------------
+1237] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1238] Prod. LINK --> | [LINK, LexToken(link,'<link\txlink:href="https://www.debian.org/">',776,21047), CONT_SECL, LexToken(cLink,'</link>',776,21121)]
+----------------------------------------
+1239] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1240] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'. Also author used ',776,21128)]
+----------------------------------------
+1241] Prod. CONT_2 --> | [CONT_2, LexToken(text,'Dia Diagram Editor',776,21192)]
+----------------------------------------
+1242] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1243] Prod. LINK --> | [LINK, LexToken(link,'<link\t\txlink:href="http://dia-installer.de/">',776,21147), CONT_SECL, LexToken(cLink,'</link>',776,21210)]
+----------------------------------------
+1244] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1245] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'for\tdiagrams.',776,21218)]
+----------------------------------------
+1246] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+1247] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1248] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1249] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1250] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1251] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1252] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1253] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1254] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1255] Prod. PARA --> | [PARA, LexToken(para,'<para>',776,20809), CONT_PARA, LexToken(cPara,'</para>',776,21231)]
+----------------------------------------
+1256] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+1257] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+1258] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',775,20794), CONT_ITEM, LexToken(cListItem,'</listitem>',777,21242)]
+----------------------------------------
+1259] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'are freely available at Github as a ',780,21279)]
+----------------------------------------
+1260] Prod. CONT_2 --> | [CONT_2, LexToken(text,'docbook-samples\tproject',780,21381)]
+----------------------------------------
+1261] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1262] Prod. LINK --> | [LINK, LexToken(link,'<link\txlink:href="https://github.com/eduardtibet/docbook-samples">',780,21315), CONT_SECL, LexToken(cLink,'</link>',780,21404)]
+----------------------------------------
+1263] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1264] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,';',780,21411)]
+----------------------------------------
+1265] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+1266] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1267] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1268] Prod. PARA --> | [PARA, LexToken(para,'<para>',780,21273), CONT_PARA, LexToken(cPara,'</para>',780,21412)]
+----------------------------------------
+1269] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+1270] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+1271] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',779,21258), CONT_ITEM, LexToken(cListItem,'</listitem>',781,21423)]
+----------------------------------------
+1272] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'are distributed under Creative Commons License - for details see.',784,21460)]
+----------------------------------------
+1273] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+1274] Prod. PARA --> | [PARA, LexToken(para,'<para>',784,21454), CONT_PARA, LexToken(cPara,'</para>',784,21525)]
+----------------------------------------
+1275] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+1276] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+1277] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',783,21439), CONT_ITEM, LexToken(cListItem,'</listitem>',785,21536)]
+----------------------------------------
+1278] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',770,20505), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',786,21550)]
+----------------------------------------
+1279] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+1280] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'To produce file of this document the',788,21575)]
+----------------------------------------
+1281] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'following software were used:',789,21614)]
+----------------------------------------
+1282] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+1283] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1284] Prod. PARA --> | [PARA, LexToken(para,'<para>',788,21569), CONT_PARA, LexToken(cPara,'</para>',789,21643)]
+----------------------------------------
+1285] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+1286] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'The local copy of ',793,21693)]
+----------------------------------------
+1287] Prod. CONT_2 --> | [CONT_2, LexToken(text,'DocBook XSL Stylesheets v. 1.79.1',793,21774)]
+----------------------------------------
+1288] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1289] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="http://docbook.sourceforge.net/release/xsl/">',793,21711), CONT_SECL, LexToken(cLink,'</link>',793,21807)]
+----------------------------------------
+1290] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1291] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'was used.',793,21815)]
+----------------------------------------
+1292] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+1293] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1294] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1295] Prod. PARA --> | [PARA, LexToken(para,'<para>',793,21687), CONT_PARA, LexToken(cPara,'</para>',793,21824)]
+----------------------------------------
+1296] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+1297] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+1298] Prod. LIST_ITEM --> | [LIST_ITEM, LexToken(listItem,'<listitem>',792,21672), CONT_ITEM, LexToken(cListItem,'</listitem>',794,21835)]
+----------------------------------------
+1299] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,"Author's customization layer of the above stylesheets that is\tnow a ",797,21872)]
+----------------------------------------
+1300] Prod. CONT_2 --> | [CONT_2, LexToken(text,'docbook pretty playout',797,22013)]
+----------------------------------------
+1301] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1302] Prod. LINK --> | [LINK, LexToken(link,'<link\txlink:href="https://github.com/eduardtibet/docbook-pretty-playout">',797,21940), CONT_SECL, LexToken(cLink,'</link>',797,22035)]
+----------------------------------------
+1303] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1304] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'project, freely available at Github.',797,22043)]
+----------------------------------------
+1305] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+1306] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1307] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1308] Prod. PARA --> | [PARA, LexToken(para,'<para>',797,21866), CONT_PARA, LexToken(cPara,'</para>',797,22079)]
+----------------------------------------
+1309] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+1310] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+1311] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',796,21851), CONT_ITEM, LexToken(cListItem,'</listitem>',798,22090)]
+----------------------------------------
+1312] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'xsltproc as an engine to produce file from the DocBook source 817.',801,22128)]
+----------------------------------------
+1313] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+1314] Prod. PARA --> | [PARA, LexToken(para,'<para>',801,22121), CONT_PARA, LexToken(cPara,'</para>',801,22194)]
+----------------------------------------
+1315] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+1316] Prod. CONT_ITEM --> | [CONT_ITEM, CONT_1]
+----------------------------------------
+1317] Prod. LIST_ITEM --> | [LIST_ITEM, LIST_ITEM, LexToken(listItem,'<listitem>',800,22106), CONT_ITEM, LexToken(cListItem,'</listitem>',802,22205)]
+----------------------------------------
+1318] Prod. ITEMIZED_LIST --> | [ITEMIZED_LIST, LexToken(itemizedlist,'<itemizedlist>',791,21654), LIST_ITEM, LexToken(cItemizedlist,'</itemizedlist>',803,22219)]
+----------------------------------------
+1319] Prod. CONT_1 --> | [CONT_1, ITEMIZED_LIST]
+----------------------------------------
+1320] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'To get the result file author used ',805,22244)]
+----------------------------------------
+1321] Prod. CONT_2 --> | [CONT_2, LexToken(text,'Apache FOP 2.3',805,22333)]
+----------------------------------------
+1322] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1323] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="http://xmlgraphics.apache.org/fop/">',805,22279), CONT_SECL, LexToken(cLink,'</link>',805,22347)]
+----------------------------------------
+1324] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1325] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'engine with a ',805,22355)]
+----------------------------------------
+1326] Prod. CONT_2 --> | [CONT_2, LexToken(text,'foponts project',805,22427)]
+----------------------------------------
+1327] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1328] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://github.com/eduardtibet/foponts">',805,22369), CONT_SECL, LexToken(cLink,'</link>',805,22442)]
+----------------------------------------
+1329] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1330] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,', created and maintained by the author of this document.',805,22449)]
+----------------------------------------
+1331] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+1332] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1333] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1334] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1335] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1336] Prod. PARA --> | [PARA, LexToken(para,'<para>',805,22238), CONT_PARA, LexToken(cPara,'</para>',805,22505)]
+----------------------------------------
+1337] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+1338] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+1339] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+1340] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+1341] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+1342] Prod. CONT_A_S --> | [CONT_A_S, CONT_1, CONT_A_S]
+----------------------------------------
+1343] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',765,20379), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',806,22516)]
+----------------------------------------
+1344] Prod. ELEM_TITLE --> | [ELEM_TITLE, LexToken(text,'License',809,22550)]
+----------------------------------------
+1345] Prod. CONT_TITLE --> | [CONT_TITLE, ELEM_TITLE]
+----------------------------------------
+1346] Prod. TITLEH1 --> | [TITLEH2, LexToken(title,'<title>',809,22543), CONT_TITLE, LexToken(cTitle,'</title>',809,22557)]
+----------------------------------------
+1347] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'This work is licensed under a ',811,22575)]
+----------------------------------------
+1348] Prod. CONT_2 --> | [CONT_2, LexToken(text,'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License',811,22675)]
+----------------------------------------
+1349] Prod. CONT_SECL --> | [CONT_SECL, CONT_2]
+----------------------------------------
+1350] Prod. LINK --> | [LINK, LexToken(link,'<link xlink:href="https://creativecommons.org/licenses/by-nc-sa/4.0/">',811,22605), CONT_SECL, LexToken(cLink,'</link>',811,22754)]
+----------------------------------------
+1351] Prod. ELEM_PARA --> | [ELEM_PARA, LINK]
+----------------------------------------
+1352] Prod. ELEM_PARA --> | [ELEM_PARA, LexToken(text,'.',811,22761)]
+----------------------------------------
+1353] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA]
+----------------------------------------
+1354] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1355] Prod. CONT_PARA --> | [CONT_PARA, ELEM_PARA, CONT_PARA]
+----------------------------------------
+1356] Prod. PARA --> | [PARA, LexToken(para,'<para>',811,22569), CONT_PARA, LexToken(cPara,'</para>',811,22762)]
+----------------------------------------
+1357] Prod. CONT_1 --> | [CONT_1, PARA]
+----------------------------------------
+1358] Prod. CONT_A_S --> | [CONT_A_S, CONT_1]
+----------------------------------------
+1359] Prod. SECTION --> | [SECTION, LexToken(section,'<section>',808,22531), TITLEH2, CONT_A_S, LexToken(cSection,'</section>',812,22773)]
+----------------------------------------
+1360] Prod. SECTIONS --> | [SECTIONS, SECTION]
+----------------------------------------
+1361] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+1362] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+1363] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+1364] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+1365] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+1366] Prod. SECTIONS --> | [SECTIONS, SECTION, SECTIONS]
+----------------------------------------
+1367] Prod. ARTICLE --> | [ARTICLE, LexToken(article,'<article>',2,19), INFO, CONT_A_S, SECTIONS, LexToken(cArticle,'</article>',813,22784)]
+----------------------------------------
+1368] Prod. SIGMA --> | [SIGMA, LexToken(doctype,'<!DOCTYPE article>',1,0), ARTICLE]
+----------------------------------------
+========================================
+Total analyzed productions: 1368

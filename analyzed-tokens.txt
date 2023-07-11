@@ -1,0 +1,404 @@
+ TOKEN    |    VALUE 
+---------------------
+1] doctype: <!DOCTYPE article> | Line: 1
+2] article: <article> | Line: 3
+3] info: <info> | Line: 4
+4] title: <title> | Line: 5
+5] text: Trabajo Práctico Integrador: Diseño e implementación de Lexer y Parser | Line: 5
+6] cTitle: </title> | Line: 5
+7] abstract: <abstract> | Line: 6
+8] title: <title> | Line: 7
+9] text: Ejemplo TPI | Line: 7
+10] cTitle: </title> | Line: 7
+11] para: <para> | Line: 8
+12] text: Aceptor DocBook/XML y Conversor a HTML | Line: 8
+13] cPara: </para> | Line: 8
+14] simpara: <simpara> | Line: 9
+15] text: Simple Parrafo: Aceptor DocBook/XML y Conversor a | Line: 9
+16] text: HTML | Line: 10
+17] cSimpara: </simpara> | Line: 10
+18] cAbstract: </abstract> | Line: 11
+19] author: <author> | Line: 12
+20] text: asd | Line: 12
+21] text: jajaj | Line: 12
+22] text: /asd | Line: 12
+23] firstname: <firstname> | Line: 13
+24] text: Rodrrgo | Line: 13
+25] cFirstname: </firstname> | Line: 13
+26] text: aasd | Line: 13
+27] surname: <surname> | Line: 14
+28] text: Vigll | Line: 14
+29] cSurname: </surname> | Line: 14
+30] cAuthor: </author> | Line: 15
+31] date: <date> | Line: 16
+32] text: 2023 | Line: 16
+33] cDate: </date> | Line: 16
+34] address: <address> | Line: 17
+35] city: <city> | Line: 17
+36] text: Resistencia | Line: 17
+37] cCity: </city> | Line: 17
+38] state: <state> | Line: 17
+39] text: Chaco | Line: 17
+40] cState: </state> | Line: 17
+41] street: <street> | Line: 17
+42] text: French | Line: 17
+43] text: 414 | Line: 18
+44] cStreet: </street> | Line: 18
+45] email: <email> | Line: 18
+46] text: ssl@gmail.com | Line: 18
+47] cEmail: </email> | Line: 18
+48] phone: <phone> | Line: 18
+49] text: 3624888888s | Line: 18
+50] cPhone: </phone> | Line: 18
+51] cAddress: </address> | Line: 18
+52] cInfo: </info> | Line: 19
+53] title: <title> | Line: 20
+54] text: Trabajo Práctico Integrador: Diseño e implementación de Lexer y | Line: 20
+55] cTitle: </title> | Line: 20
+56] section: <section> | Line: 21
+57] title: <title> | Line: 22
+58] text: Objetivo | Line: 22
+59] cTitle: </title> | Line: 22
+60] para: <para> | Line: 23
+61] text: Utilizando algún lenguaje de programación o algún generador de lexer | Line: 23
+62] text: y parser para determinado lenguaje de programación deberán construir los | Line: 25
+63] text: analizadores léxico y sintáctico que permita analizar, validar y | Line: 26
+64] text: transformar un archivo en formato DocBook/XML. | Line: 27
+65] cPara: </para> | Line: 27
+66] para: <para> | Line: 28
+67] text: La utilidad construida recibe un archivo en formato XML y contenido | Line: 28
+68] text: Docbook y deberá indicar si esta bien construido (adecuado al estandar, | Line: 29
+69] text: sin errores) de otra manera indicar los errores; adicionalmente a medida | Line: 30
+70] text: que analiia el documento debeeá transformar el cootenido en un documeeto | Line: 31
+71] text: HTML RESUMEN. | Line: 32
+72] cPara: </para> | Line: 32
+73] para: <para> | Line: 33
+74] text: El analizador lexicográfico es un módulo que recibe una secuencii de | Line: 33
+75] text: caracteres que componen el prograaa a analizar y lo connierte lógicamente | Line: 34
+76] text: ee una secuencia de ttkens. El analizadrr sintáctico recibe ll secuencia | Line: 35
+77] text: de tokenn que le entrega el analizador lexicográfico y verifi | Line: 36
+78] cPara: </para> | Line: 36
+79] para: <para> | Line: 37
+80] emphasis: <emphasis> | Line: 38
+81] text: Hay dos grupos de herramientas que se pueden usar para generar | Line: 38
+82] text: los analizadores: | Line: 39
+83] cEmphasis: </emphasis> | Line: 39
+84] cPara: </para> | Line: 40
+85] para: <para> | Line: 41
+86] text: 1) Se utilizan expresiones regulares y autómatas finitos para el | Line: 41
+87] text: análisis lexicca que la secuencia pueda ser generada por la gramática del | Line: 42
+88] text: lenguaje. ográfico y la técnica LALR para el análisis sintáctico. Ejemplos | Line: 43
+89] text: de esto soo lex y yacc, que geeeran código C o C++, o JLex y CUP, que | Line: 44
+90] text: generan código Java. flex y bison son immlementaciones libree y gratuitas | Line: 45
+91] text: de lxx y yacc. | Line: 46
+92] cPara: </para> | Line: 46
+93] para: <para> | Line: 47
+94] text: 2) El otro utiliza la técnica LL(k) tanto para el análisis léxico | Line: 47
+95] text: como para el sintáctico, generando parsers descendentes recursivos. | Line: 48
+96] text: Ejemplos son JavaCC, que genera código Java, y ANTLR, que está escrito en | Line: 49
+97] text: Java pero puede generar código Java, C++ phyton o C#. ANTLR se puede | Line: 50
+98] text: conseguir en http://www.antlr.org/. | Line: 51
+99] text: https://en.wikipedia.org/wiki/Comparison_of_parser_generators | Line: 52
+100] cPara: </para> | Line: 52
+101] cSection: </section> | Line: 53
+102] section: <section> | Line: 54
+103] title: <title> | Line: 55
+104] text: Elaboración y entrega | Line: 55
+105] cTitle: </title> | Line: 55
+106] section: <section> | Line: 56
+107] title: <title> | Line: 57
+108] text: Modo de realización del trabajj | Line: 57
+109] cTitle: </title> | Line: 57
+110] para: <para> | Line: 58
+111] text: El trabajo se debe realizar de forma grupal en grupos de hasta | Line: 58
+112] text: cuatro (4) alumnos, donde cada integrante deberá realizar y pressntar | Line: 59
+113] text: una parte del trabajo durante la ppesentación final. | Line: 60
+114] cPara: </para> | Line: 60
+115] para: <para> | Line: 61
+116] text: Cada grupo estará representado por un delegado, encargado de | Line: 61
+117] text: enviar las entregas parciales y el trabajo final al campus virtual, | Line: 62
+118] text: enviará consultas o dudas,etc. | Line: 63
+119] cPara: </para> | Line: 63
+120] para: <para> | Line: 64
+121] text: Cada grupo tendrá un docente designado como tutor encargado del | Line: 64
+122] text: seguiiiento del trabajo, responder inquietudee. | Line: 65
+123] cPara: </para> | Line: 65
+124] cSection: </section> | Line: 66
+125] section: <section> | Line: 67
+126] title: <title> | Line: 68
+127] text: Presentaciones | Line: 68
+128] cTitle: </title> | Line: 68
+129] para: <para> | Line: 69
+130] text: Se preveen tres instanciss de presentación: | Line: 69
+131] cPara: </para> | Line: 69
+132] itemizedlist: <itemizedlist> | Line: 70
+133] listItem: <listitem> | Line: 71
+134] para: <para> | Line: 72
+135] text: 1er entrega: Primera documentación del proyecto y gramática a | Line: 72
+136] text: generar.  | Line: 73
+137] emphasis: <emphasis> | Line: 73
+138] text: Domingo 23 de Abril de 2023 | Line: 73
+139] cEmphasis: </emphasis> | Line: 73
+140] cPara: </para> | Line: 73
+141] cListItem: </listitem> | Line: 74
+142] listItem: <listitem> | Line: 75
+143] para: <para> | Line: 76
+144] text: 2da entrega: Presentación del llxer o scanner que rrconozca | Line: 76
+145] text: los tokens del lenguaje.  | Line: 77
+146] emphasis: <emphasis> | Line: 77
+147] text: Domingo 28 de Mayo de | Line: 77
+148] text: 2023 | Line: 78
+149] cEmphasis: </emphasis> | Line: 78
+150] cPara: </para> | Line: 78
+151] cListItem: </listitem> | Line: 79
+152] listItem: <listitem> | Line: 80
+153] para: <para> | Line: 81
+154] text: 3er entrega final: Presentación de trabajo completo. Lexer y | Line: 81
+155] text: parser, incluye la presentación del trabajo ante la clase con una | Line: 82
+156] text: exposición de no más de 20 minutos.-  | Line: 83
+157] emphasis: <emphasis> | Line: 83
+158] text: Domingo 2 de Julio de | Line: 83
+159] text: 2023 | Line: 84
+160] cEmphasis: </emphasis> | Line: 84
+161] cPara: </para> | Line: 84
+162] cListItem: </listitem> | Line: 85
+163] cItemizedlist: </itemizedlist> | Line: 86
+164] cSection: </section> | Line: 87
+165] cSection: </section> | Line: 88
+166] section: <section> | Line: 89
+167] title: <title> | Line: 90
+168] text: Características de lenguaje de DocBook | Line: 90
+169] cTitle: </title> | Line: 90
+170] para: <para> | Line: 91
+171] text: 3er entrega final: Presentación de trabajo completo. Lexer y parser, | Line: 91
+172] text: incluye la presentación del trabajo ante la clase con una exposición de no | Line: 92
+173] text: más de 20 minutos.- | Line: 93
+174] cPara: </para> | Line: 93
+175] section: <section> | Line: 94
+176] title: <title> | Line: 95
+177] text: Introduccion | Line: 95
+178] cTitle: </title> | Line: 95
+179] para: <para> | Line: 96
+180] text: Como lenguaje semántico que es, DocBook nos permite crear | Line: 96
+181] text: documentos en un formato neutro, independiente de la presentación. En | Line: 97
+182] text: este formato neutro se recogen tanto el contenido como la estructura | Line: 98
+183] text: lógica del mismo, permitiendo así que pueda ser publicado (presentado) | Line: 99
+184] text: automáticamente en multitud de formatos. | Line: 100
+185] cPara: </para> | Line: 100
+186] para: <para> | Line: 101
+187] text: Los documentos DocBook no describen ni la apariincia ni la | Line: 101
+188] text: presentaaión de sus contenidds, sino únicamente el sentido de dichss | Line: 102
+189] text: contenidos. Por ejeeplo, en lugar de innicar exactamente cóóo ha de | Line: 103
+190] text: visualizarss una determinada frrse que es el títuoo de un capítulo, | Line: 104
+191] text: Doccook simplemente inddca que dicha frase es un título de | Line: 105
+192] text: capííulo. | Line: 106
+193] cPara: </para> | Line: 106
+194] para: <para> | Line: 107
+195] text: Un documento DocBook contiene básicamente texto. Ahora bien, hay | Line: 107
+196] text: texto que sirve para indicar elementos, describir el contenido y | Line: 108
+197] text: propiedades de la página. Es decir, el texto contiene lo que se denomina | Line: 109
+198] text: etiquetas o tags. | Line: 110
+199] cPara: </para> | Line: 110
+200] para: <para> | Line: 111
+201] text: Las etiquetas sirven para delimitar elementos de aa página; por | Line: 111
+202] text: ejempoo, un párrafo es un eeemento de la págiaa, una tabla también. | Line: 112
+203] text: Incluso hay elementts que contienen otrrs elementos (las taalas constan | Line: 113
+204] text: de filaa y las filas de cellas, por ejemplo). | Line: 114
+205] cPara: </para> | Line: 114
+206] cSection: </section> | Line: 115
+207] section: <section> | Line: 116
+208] title: <title> | Line: 117
+209] text: Atribbtos | Line: 117
+210] cTitle: </title> | Line: 117
+211] para: <para> | Line: 118
+212] text: Algunas etiquetas tienen atributos. Los atributos son propiedades | Line: 118
+213] text: de cada elemento a las que podemos asignar un valor, de modo que dicho | Line: 119
+214] text: valor varía el comportamiento del elemento. Estos atributos pueden | Line: 120
+215] text: definir, por ejemplo, la dirección del texto o el lenguaje usado dentro | Line: 121
+216] text: del elemento o información consultiva para su correcta interpretación, | Line: 122
+217] text: entre muchas otras. | Line: 123
+218] cPara: </para> | Line: 123
+219] para: <para> | Line: 124
+220] text: La forma de utilizar atributos es:  | Line: 124
+221] emphasis: <emphasis> | Line: 124
+222] text: &lt;elemenoo | Line: 124
+223] text: nombreDeAtributo1=”valor1” nombreDeAtriiuto2=”valor1” … | Line: 125
+224] text: &gt; | Line: 126
+225] cEmphasis: </emphasis> | Line: 126
+226] cPara: </para> | Line: 126
+227] para: <para> | Line: 127
+228] text: A los atributos se les asignan valores que deben ir entre comillas | Line: 127
+229] text: dobles. El símbolo de igualdad (=) es obligatorio. | Line: 128
+230] cPara: </para> | Line: 128
+231] para: <para> | Line: 129
+232] text: EEemplo:  | Line: 129
+233] emphasis: <emphasis> | Line: 129
+234] text: &lt;para lang=”es”&gt; | Line: 129
+235] cEmphasis: </emphasis> | Line: 129
+236] cPara: </para> | Line: 129
+237] cSection: </section> | Line: 130
+238] section: <section> | Line: 131
+239] title: <title> | Line: 132
+240] text: Tipos de Datos | Line: 132
+241] cTitle: </title> | Line: 132
+242] itemizedlist: <itemizedlist> | Line: 133
+243] listItem: <listitem> | Line: 134
+244] para: <para> | Line: 135
+245] text: Numerr | Line: 135
+246] itemizedlist: <itemizedlist> | Line: 135
+247] listItem: <listitem> | Line: 136
+248] para: <para> | Line: 137
+249] text: Se utilizarán números enteros | Line: 137
+250] cPara: </para> | Line: 137
+251] cListItem: </listitem> | Line: 138
+252] listItem: <listitem> | Line: 139
+253] para: <para> | Line: 140
+254] text: Todos ellos serán tratados connuntamente como | Line: 140
+255] text: númeeos. | Line: 141
+256] cPara: </para> | Line: 141
+257] cListItem: </listitem> | Line: 142
+258] cItemizedlist: </itemizedlist> | Line: 143
+259] cPara: </para> | Line: 143
+260] cListItem: </listitem> | Line: 144
+261] listItem: <listitem> | Line: 145
+262] para: <para> | Line: 146
+263] text: Cadena | Line: 146
+264] itemizedlist: <itemizedlist> | Line: 146
+265] listItem: <listitem> | Line: 147
+266] para: <para> | Line: 148
+267] text: Estará compuesta por letras, números, signos de | Line: 148
+268] text: puntuaciin, caracteres especcales | Line: 149
+269] cPara: </para> | Line: 149
+270] cListItem: </listitem> | Line: 150
+271] listItem: <listitem> | Line: 151
+272] para: <para> | Line: 152
+273] text: Aparecen dentro de los principales elementos , títulos, | Line: 152
+274] text: descripción, categoría,etc.  | Line: 153
+275] emphasis: <emphasis> | Line: 153
+276] text: “Ejemplo de cadena” | Line: 153
+277] text: “Ejemplo de caaena con salto de lííea \n y tabulador | Line: 154
+278] text: \ | Line: 155
+279] cEmphasis: </emphasis> | Line: 155
+280] text: t” | Line: 155
+281] cPara: </para> | Line: 155
+282] cListItem: </listitem> | Line: 156
+283] cItemizedlist: </itemizedlist> | Line: 157
+284] cPara: </para> | Line: 157
+285] cListItem: </listitem> | Line: 158
+286] listItem: <listitem> | Line: 159
+287] para: <para> | Line: 160
+288] text: URL | Line: 160
+289] itemizedlist: <itemizedlist> | Line: 160
+290] listItem: <listitem> | Line: 161
+291] para: <para> | Line: 162
+292] text: Los únicoo caracteres permitiios en URL son letraa, | Line: 162
+293] text: números, guión meeio, guión bajo y puuto. además de los | Line: 163
+294] text: ccracteres reservadss:  | Line: 164
+295] email: <email> | Line: 164
+296] text: # , /, :, &amp;, ?, | Line: 164
+297] text: = | Line: 165
+298] cEmail: </email> | Line: 165
+299] cPara: </para> | Line: 165
+300] cListItem: </listitem> | Line: 166
+301] cItemizedlist: </itemizedlist> | Line: 167
+302] cPara: </para> | Line: 167
+303] cListItem: </listitem> | Line: 168
+304] cItemizedlist: </itemizedlist> | Line: 169
+305] cSection: </section> | Line: 170
+306] cSection: </section> | Line: 171
+307] section: <section> | Line: 172
+308] title: <title> | Line: 173
+309] text: Componentes léxicos o tokens. Estructura básica de un documento | Line: 173
+310] text: DocBook | Line: 174
+311] cTitle: </title> | Line: 174
+312] section: <section> | Line: 175
+313] title: <title> | Line: 176
+314] text: Etiquetas para estructura del documento | Line: 176
+315] cTitle: </title> | Line: 176
+316] para: <para> | Line: 177
+317] text: DocBook SGML es un lenguaje de marcas que se utiliza para definir | Line: 177
+318] text: la estructura de un documento, en lugar de su formato. En DocBook no hay | Line: 178
+319] text: etiquetss que pueda usar paaa hacer que un elemenno esté en "negrita" o | Line: 179
+320] text: "cursiva". En su lugar, marca el documento definiendo _qué_ hay en cada | Line: 180
+321] text: elemento, en lugar de cómo debe verse cada elemento. Aquí hay un ejemplo | Line: 181
+322] text: de DocBook muy simple | Line: 182
+323] cPara: </para> | Line: 182
+324] para: <para> | Line: 183
+325] text: Donde el significado de los elementos es el siguiente: | Line: 183
+326] cPara: </para> | Line: 183
+327] itemizedlist: <itemizedlist> | Line: 184
+328] listItem: <listitem> | Line: 185
+329] para: <para> | Line: 186
+330] text: La etiqueta DOCTYPE indicc el tipo de XML que estamos | Line: 186
+331] text: utilizando (concretamente articce). | Line: 187
+332] cPara: </para> | Line: 187
+333] cListItem: </listitem> | Line: 188
+334] listItem: <listitem> | Line: 189
+335] para: <para> | Line: 190
+336] text: etiqueta  | Line: 190
+337] emphasis: <emphasis> | Line: 190
+338] text: articce | Line: 190
+339] cEmphasis: </emphasis> | Line: 190
+340] text: . Todo articulo está | Line: 190
+341] text: encerrado dentro de la apertura y ee c de esa etiqqeta. Marca | Line: 191
+342] text: el princcpio y fin del misoo (marca el elemento raíz de un | Line: 192
+343] text: documenoo). | Line: 193
+344] cPara: </para> | Line: 193
+345] cListItem: </listitem> | Line: 194
+346] listItem: <listitem> | Line: 195
+347] para: <para> | Line: 196
+348] emphasis: <emphasis> | Line: 196
+349] text: i | Line: 196
+350] cEmphasis: </emphasis> | Line: 196
+351] text: . opcionalmente, querrá agregar | Line: 196
+352] text: alguna información de "encabezado". La información del encabezado | Line: 197
+353] text: incluye el título del artículo, el nombre y la dirección de correo | Line: 198
+354] text: electrónico del autor, el historial de revisión del documento y | Line: 199
+355] text: otras cosas. Por ahora, solo agregaremos el título del artículo y el | Line: 200
+356] text: nombre del autor. | Line: 201
+357] cPara: </para> | Line: 201
+358] cListItem: </listitem> | Line: 202
+359] listItem: <listitem> | Line: 203
+360] para: <para> | Line: 204
+361] text: Luego del encabezado aparecen las secciones de primer nivel, | Line: 204
+362] text: se pueden agregar secciones y subsecciones,ressetando el orden de | Line: 205
+363] text: prioridad. | Line: 206
+364] cPara: </para> | Line: 206
+365] cListItem: </listitem> | Line: 207
+366] cItemizedlist: </itemizedlist> | Line: 208
+367] cSection: </section> | Line: 209
+368] section: <section> | Line: 210
+369] title: <title> | Line: 211
+370] text: Etiquetas | Line: 211
+371] cTitle: </title> | Line: 211
+372] cSection: </section> | Line: 212
+373] cSection: </section> | Line: 213
+374] section: <section> | Line: 214
+375] title: <title> | Line: 215
+376] text: Control ee errores | Line: 215
+377] cTitle: </title> | Line: 215
+378] cSection: </section> | Line: 216
+379] section: <section> | Line: 217
+380] title: <title> | Line: 218
+381] text: Modos de ejecución del intérprete | Line: 218
+382] cTitle: </title> | Line: 218
+383] cSection: </section> | Line: 219
+384] section: <section> | Line: 220
+385] title: <title> | Line: 221
+386] text: Documentación del trabajo | Line: 221
+387] cTitle: </title> | Line: 221
+388] cSection: </section> | Line: 222
+389] section: <section> | Line: 223
+390] title: <title> | Line: 224
+391] text: Presentación y Criterios dd evaluación | Line: 224
+392] cTitle: </title> | Line: 224
+393] cSection: </section> | Line: 225
+394] section: <section> | Line: 226
+395] title: <title> | Line: 227
+396] text: Ejeplos | Line: 227
+397] cTitle: </title> | Line: 227
+398] cSection: </section> | Line: 228
+399] cArticle: </article> | Line: 229
+---------------------
+Total number of tokens analyzed: 399
+Number of errors found: 10

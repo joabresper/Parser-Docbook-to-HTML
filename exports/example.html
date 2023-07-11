@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>example</title>
+</head>
+<body>
+<p style="background-color:green; color: white; font-size:8px"><h1>Segmented Telemetry Data Filter</h1></p>
+<p style="background-color:green; color: white; font-size:8px">Eduard
+Tibet</p>
+<p style="background-color:green; color: white; font-size:8px">28.03.2022</p>
+<div><h2>Introduction</h2>
+<div><h2>Scope of this document</h2>
+<p>This is a complete administrator's manual of the
+Segmented Telemetry Data Filter (STDF) software. It describes in a brief
+what STDF is proposed for, its overall design, what each component is
+indented for. Also this manual includes a full information about an
+installation process and usage of STDF. The theory and principles of
+data filtering, explanation of the Erlang language syntax (used for data
+filtering) are completely out of scope of this manual.</p></div>
+<div><h2>Document structure</h2>
+<p>This document includes a following parts:</p>
+<ul>
+	<li>
+	<p>- current
+section.</p>
+</li>
+<li><p>- a
+description of the software's overall design, features and
+functionality.</p>
+</li>
+<li><p>-
+the information about system requirements and installation of the
+software.</p>
+</li>
+<li><p>-
+current section describes, how to create and mastering filtering
+rules required to be deployed into the one of the software
+component.</p>
+</li>
+<li><p>-
+section about customizing and fine tuning final data.</p>
+</li>
+<li><p>- list of
+possible issues and ways to resolve them.</p>
+</li>
+</ul></div></div>
+<div><h2>Description of the STDF</h2>
+<div><h2>Brief description of the STDF</h2>
+<p>STDF is a data handling software designed to help in capturing
+high speed telemetry data. The purpose of the STDF is to automatically
+and linearly scale processing capacity for such data. The STDF segments
+data into smaller chunks and sends them through a load balancer to
+several servers that filter received data. That way it is possible
+to:</p>
+<ul>
+	<li>
+	<p>avoid using a single high-powered processing unit working with
+data;</p>
+</li>
+<li><p>reduce power of any unit, used for processing;</p>
+</li>
+<li><p>deploy the system with a great flexibility and scalability,
+based on various initial requirements and/or conditions.</p>
+</li>
+</ul></div>
+<div><h2>Overall design of STDF</h2>
+<p>The system contains of several parts:</p>
+<ul>
+	<li>
+	<p>coordinator component (node) - is used for smart management of
+the whole system;</p>
+</li>
+<li><p>loadbalancer component (node) - is used for receiving raw data
+from external sources (i.e. sensors) and transfer it further based
+on coordinator's directives;</p>
+</li>
+<li><p>filter component(s)/node(s) - are used to process data
+received from the loadbalancer. Processing is based on the current
+workload. If it exceeds the maximum, defined by a coordinator, data
+chunks automatically migrate to other filter nodes, which free
+resources are enough to manipulate the data. The number of filter
+components within installation varies and based on current
+performance needs.</p>
+</li>
+</ul>
+<p>In the heart of the STDF is a proprietary protocol that was
+developed by Teliota company. This protocol can be used between
+components to coordinate data manipulation, calculation on individual
+filters, running on each server, and data migration between
+filters.</p>
+<p>The typical workflow includes the following steps:</p></div>
+<div><table><div><tr><td><p>loadbalancer component receives all-raw data from external
+sources (i.e. sensors) and transmit it further to filters based on
+coordinator's current workload rules and internal logic;</p></td><td><p>filter component receives an independent dataset from the
+loadbalancer and asks a cluster's coordinator to supply a filtering
+rules;</p></td><td><p>coordinator provides a rules to the filter and then rules are
+applied on-the-fly onto the incoming data, received from the
+loadbalancer;</p></td></tr></div></table></div
+<div><h2>Overall design of STDF</h2>
+<p><img src="<re.Match object; span=(0, 42), match='<imagedata fileref="img/stdf_manual.svg"/>'>"></p></div>
+<div><ul>
+	<li>
+	<p>a sufficient number of such redundant servers (filter modes)
+exists in the pool as during an overload situation;</p>
+</li>
+<li><p>the offloaded data is similar to the original data and can be
+filtered with same rules.</p>
+</li>
+</ul>
+<table><div><tr><td><p>adding new server hardware;</p></td><td><p>installing the filter component software onto it;</p></td><td><p>configuring the coordinator server address.</p></td></tr></div></table></div
+<div><p>The filter node will register itself to the coordinator and the
+coordinator will instruct the loadbalancer to forward traffic to this
+new node.</p>
+<p>Telemetry data and filter operations are defined with a definition
+file that in turn is written in a proprietary filter rule language. The
+language defines in details:</p></div
+<div><ul>
+	<li>
+	<p>what the incoming data is stands for;</p>
+</li>
+<li><p>how the data may be aggregated and filtered out in case of
+outliers or unwanted values are found.</p>
+</li>
+</ul>
+<p>The coordinator reads the filter language files and runs them on
+its own logic processing engine. This engine is connected to all the
+filtering nodes, which receives processing instructions in the form of a
+proprietary, compressed command protocol. The protocol is
+bidirectional:</p>
+<ul>
+	<li>
+	<p>filter nodes and the loadbalancer inform the coordinator about
+data they receive and their status.</p>
+</li>
+<li><p>coordinator instructs:</p><ul>
+	<li>
+	<p>loadbalancer - where to deploy initial raw-based
+data;</p>
+</li>
+<li><p>filters - what data is and how that data should be
+manipulated over.</p>
+</li>
+</ul>
+</li>
+</ul></div</div>
+<div><h2>Installation of the software</h2>
+<div><h2>System requirements</h2>
+<p>To successfully install and run STDF, your base hardware/software
+installation have to be complied with the following requirements:</p>
+<ul>
+	<li>
+	<p>Two (2) dedicated hardware servers for a coordinator and a
+loadbalancer components;</p>
+</li>
+<li><p>no other application software (i.e. MTA, DB, etc.), except of
+an operating system and system utilities should be installed on the
+above servers;</p>
+</li>
+<li><p>required amount of servers that will be used as hosts for a
+filtering components (nodes);</p>
+</li>
+<li><p>network connectivity with all sensors that gather information
+for your application - your firewall rules should allow sensors to
+access the STDF cluster (loadbalancer component);</p>
+</li>
+<li><p>network connectivity within all components of the STDF
+installation and data receivers beyond the STDF deployment (DB or
+third-party application servers);</p>
+</li>
+<li><p>any recent Linux distribution with a kernel 2.6.32 or
+later;</p>
+</li>
+<li><p>standard (base) Linux utilities, including:</p><ul>
+	<li>
+	<p>- utility to work with files;</p>
+</li>
+<li><p>- utility to get packages from
+the distribution server;</p>
+</li>
+<li><p>any console text editors to edit configuration files -
+i.e.
+etc.</p>
+</li>
+</ul>
+</li>
+</ul></div>
+<div><h2>User qualification</h2>
+<p>To install and maintain STDF system administrator have to
+have:</p>
+<ul>
+	<li>
+	<p>skills equals to those, that are enough to successfully pass
+the LPIC-2 exam;</p>
+</li>
+<li><p>some knowledge of Erlang language syntax to write filtering
+rules.</p>
+</li>
+<li><p>read throughly a "STDF filtering rules language reference"
+manual (supplied by Teliota separately).</p>
+</li>
+</ul></div>
+<div><h2>Installation process of components</h2>
+<div><h2>Getting packages of components</h2>
+<p>All packages are to be downloaded from a Teliota distribution
+web server: 
+<a href="https://download.teliota.com">https://download.teliota.com</a>
+.</p></div>
+<div><h2>Installation of a coordinator component</h2>
+<p>To install a coordinator component:</p>
+<table><div><tr><td>Go the the top level installation directory.</td></tr>
+<tr><td>Make a directory for coordinator's files:</td></tr>
+<tr><td>Change a directory to the recently created one:</td></tr>
+<tr><td>Download the package with a coordinator component:</td></tr>
+<tr><td>Untar coordinator component files:</td></tr>
+<tr><td>Open configuration file inany text editor and set up the IP and port that coordinatorcomponent should listen on:</td></tr>
+<tr><td>Change directory thefolder:</td></tr>
+<tr><td>Check if the file have an execution bit turned on.</td></tr>
+<tr><td>Run the coordinator:</td></tr></div></table>
+<p>The coordinator is needed to be fed by filtering rules. The
+coordinator includes a separate language parsing and debugging tool
+which validates a filter rule.</p>
+<p>It is assumed that you have filtering rules already written.
+If you haven't any rule written yet, first check the section.</p>
+<p>To deploy a filtering rule:</p>
+<table><div><tr><td><p>Check the filtering rule:</p></td><td><p>If there are any output messages - read them carefully.
+These messages also saved within a log file for the future
+analysis.</p></td><td><p>Copy the rule file to a 
+directory within the coordinator installation:</p></td><td><p>Open configuration file in
+any text editor and add recently copied file into the
+coordinator's configuration file:</p></td><td><p>Restart the coordinator component:</p></td></tr></div></table></div>
+<div><h2>Installation of a loadbalancer component</h2>
+<p>To install a loadbalancer component:</p>
+<ul>
+	<li>
+	<p>Change a current directory to the top level installation
+one.
+<a href="https://www.google.com">[0]</a></p>
+</li>
+<li><p>Make a directory for the loadbalancer component
+files:
+<a href="https://www.google.com">[1]</a></p>
+</li>
+<li><p>Change a directory to the recently created one:
+<a href="https://www.google.com">[2]</a></p>
+</li>
+<li><p>Download the package with a loadbalancer component:
+<a href="https://www.google.com">[3]</a></p>
+</li>
+<li><p>Untar the loadbalancer component files:
+<a href="https://www.google.com">[4]</a></p>
+</li>
+<li><p>Open configuration file 
+<strong>config.ini</strong>
+in any text editor and point the loadbalancer to the coordinator's IP address and port number: 
+<a href="https://www.google.com">[5]</a></p>
+</li>
+<li><p>Change directory to the
+folder: 
+<a href="https://www.google.com">[6]</a></p>
+</li>
+<li><p>Check if the file 
+<strong>stdf_loadbalancer.sh</strong>
+have an execution bitturned on 
+<a href="https://www.google.com">[7]</a>
+.</p>
+</li>
+<li><p>Run the loadbalancer component: 
+<a href="https://www.google.com">[8]</a></p>
+</li>
+</ul></div>
+<div><h2>Installation of a filtering component</h2>
+<p>To install a filtering component:</p></div></div></div>
+<div><h2>Authoring filtering rules</h2>
+<p><strong>This section only briefly describes filtering rules structure. Fora detailed information take a look into the "STDF filtering ruleslanguage reference" manual (supplied separately).</strong></p>
+<p>Filtering rules are defined utilizing a filtering language that uses
+Erlang language syntax as a basis.</p>
+<p>Each filtering rule includes three elements (so called
+"definitions"):</p>
+<ul>
+	<li>
+	<p>data definition - describes nature of data to be filtered,
+including the pattern how the incoming data can be recognized (e.g.
+port, input url, data header); the data definition assigns an
+identifier to the dataset so that the data correlation and filter
+rules can refer to it;</p>
+</li>
+<li><p>correlation definition - describes how that data depends on
+itself or some other identified dataset;</p>
+</li>
+<li><p>filter definition - describes what actions are to be taken for
+the data, when it arrives.</p>
+</li>
+</ul></div>
+<div><h2>Using and verifying filtered data</h2>
+<p>The filtering cluster appoints one of its nodes automatically as a
+forwarder, based on the load of the servers. The forwarder collects the
+data from each filtering node, combines it into one stream, and sends it
+to whatever server is designated as the final receiver
+(destination).</p>
+<p><div style="background-color: red; color:white;"><p>The filtering components (nodes) don't store any data - they
+only perform filtering. You have to define and configure the storage
+server beyond the STDF deployment that will perform any and all
+database processing. A connection to a designated DB server is
+configured within a coordinator component configuration file
+config.ini.</p></div></p>
+<p>The forwarder can optionally inject additional data headers and
+trailers into the initial data block for easier recognition of its nature
+- source transmitter/generator. The trailer may contain a CRC for checking
+data integrity. The algorithm for the CRC is shown below:</p></div>
+<div><h2>Troubleshooting</h2>
+<div><h2>Problem: no connection from a filter node to acoordinator</h2>
+<table><div><tr><th>Possible reasons</th><th>How to solve a problem</th></tr>
+<tr><td>Any of coordinator's node IP settings of a filter nodeare not correct or were not set.</td><td>Check for a correct IP and port numbers offilters.</td></tr>
+<tr><td>Firewall rules don't allow filter packets to reach acoordinator</td><td>Check if coordinator firewall settings (open ports and IPrules) are correct.</td></tr>
+<tr><td>Coordinator node is not running</td><td>Check if coordinator is really running.</td></tr></div></table></div>
+<div><h2>Problem: filtering node doesn't receive filtering rules</h2>
+<table><div><tr><th>Possible reason</th><th>How to solve a problem</th></tr>
+<tr><td>Any of coordinator's node IP settings of a filter nodeare not correct or were not set.</td><td>Check for a correct IP and port numbers (see aboveproblem's first solution).</td></tr>
+<tr><td>Errors in filtering language</td><td>Check coordinator's log file for errors</td></tr>
+<tr><td>Issues with network connectivity or software used</td><td>Check coordinator's log file for errors; check nodefirewall settings</td></tr></div></table></div>
+<div><h2>Problem: filtering node doesn't receive data</h2>
+<table><div><tr><th>Possible reason</th><th>How to solve a problem</th></tr>
+<tr><td>Loadbalancer is not running</td><td>Check for errors in loadbalancer log files</td></tr>
+<tr><td>Ports are close or filtered by firewall</td><td>Check node firewall settings</td></tr>
+<tr><td>There are no actual data received</td><td>Check loadbalancer log file of transmitted data</td></tr></div></table></div>
+<div><h2>Problem: loadbalancer doesn't receive any data</h2>
+<table><div><tr><th>Possible reason</th><th>How to solve a problem</th></tr>
+<tr><td>Loadbalancer is not running</td><td>Check if loadbalancer is running and check for errors inloadbalancer's log files.</td></tr>
+<tr><td>Ports are close or filtered by firewall</td><td>Check loadbalancer firewall settings</td></tr></div></table></div>
+<div><h2>Problem: Filter produces incorrect results</h2>
+<table><div><tr><th>Possible reason</th><th>How to solve a problem</th></tr>
+<tr><td>Incorrect filter initial setup</td><td>Run node with higher level of verbosity: start them withand then check logfiles for possible issues</td></tr>
+<tr><td>Incorrect filter rules</td><td>Run filter language parser and validate it's actualsyntax: run</td></tr></div></table></div></div>
+<div><h2>Technology stack behind this sample document</h2>
+<p>The source files of this document:</p>
+<ul>
+	<li>
+	<p>were completely written in 
+<a href="https://docbook.org/xml/5.1/">DocBook/XML 5.1</a>
+format which is 
+<a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=docbook">OASIS Standard</a>
+;</p>
+</li>
+<li><p>were WYSYWYM-authored by using of 
+<a href="http://www.xmlmind.com/xmleditor/">XMLmind XML Editor</a>
+version 7.3 by 
+<a href="http://www.xmlmind.com">XMLmind Software</a>
+installed on author's desktop running 
+<a href="https://www.debian.org/">Debian GNU/Linux 10.11	(buster)</a>
+. Also author used 
+<a href="http://dia-installer.de/">Dia Diagram Editor</a>
+for	diagrams.</p>
+</li>
+<li><p>are freely available at Github as a 
+<a href="https://github.com/eduardtibet/docbook-samples">docbook-samples	project</a>
+;</p>
+</li>
+<li><p>are distributed under Creative Commons License - for details see.</p>
+</li>
+</ul>
+<p>To produce file of this document the
+following software were used:</p>
+<ul>
+	<li>
+	<p>The local copy of 
+<a href="http://docbook.sourceforge.net/release/xsl/">DocBook XSL Stylesheets v. 1.79.1</a>
+was used.</p>
+</li>
+<li><p>Author's customization layer of the above stylesheets that is	now a 
+<a href="https://github.com/eduardtibet/docbook-pretty-playout">docbook pretty playout</a>
+project, freely available at Github.</p>
+</li>
+<li><p>xsltproc as an engine to produce file from the DocBook source 817.</p>
+</li>
+</ul>
+<p>To get the result file author used 
+<a href="http://xmlgraphics.apache.org/fop/">Apache FOP 2.3</a>
+engine with a 
+<a href="https://github.com/eduardtibet/foponts">foponts project</a>
+, created and maintained by the author of this document.</p></div>
+<div><h2>License</h2>
+<p>This work is licensed under a 
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
+.</p></div>
+</body>
+</html>
